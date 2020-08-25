@@ -1,0 +1,256 @@
+/* ----- HERO ----- */
+
+.hero {
+  overflow: hidden;
+
+  &__overlay {
+    position: relative;
+    height: 69vw;
+    overflow: hidden;
+
+    @media #{$HD__screens__1920} {
+      height: 100vh;
+    }
+
+    &::after {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ecf3f7;
+      clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+      -webkit-clip-path: polygon(100% 0, 100% 100%, 0 80%, 0 0);
+    }
+  }
+
+  &__inner {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 80%, 100% 0);
+  }
+
+  &__video {
+    display: none;
+
+    @media #{$tablet_land__1024} {
+      display: block;
+      object-fit: cover;
+      width: 100vw;
+      height: 100vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      filter: brightness(60%);
+    }
+  }
+
+  &__background {
+    position: relative;
+    margin: -2%;
+    overflow: hidden;
+
+    @media #{$tablet_land__1024} {
+      display: none;
+    }
+
+    &-img {
+      filter: url(#blur);
+      filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+      filter: brightness(60%) blur(3px);
+
+      @media #{$tablet_land__1024} {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+
+    &-logo {
+      position: absolute;
+      width: 60%;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -15%);
+
+      @media #{$mobile_land__640} {
+        top: 30%;
+        transform: translate(-50%, -30%);
+      }
+
+      @media #{$tablet_land__1024} {
+        top: 25%;
+        width: 65%;
+      }
+    }
+  }
+
+  &-slider {
+    &__slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: none;
+
+      &.active {
+        display: flex;
+
+        & .hero-slider__slide-title {
+          animation: fadeIn ease 4s;
+        }
+      }
+
+      &-title {
+        color: $white;
+        font-family: $font-title;
+        font-size: rem(22px);
+        width: 100%;
+        white-space: pre-line;
+        margin: 0;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        text-align: center;
+
+        @media #{$mobile_land__640} {
+          font-size: rem(35px);
+        }
+
+        @media #{$tablet_land__1024} {
+          font-size: rem(50px);
+        }
+
+        @media #{$desktop__1280} {
+          font-size: rem(60px);
+        }
+
+        @media #{$large__screens__1440} {
+          font-size: rem(73px);
+        }
+
+        @media #{$full__screens__1600} {
+          font-size: rem(82px);
+        }
+
+        @media #{$HD__screens__1920} {
+          font-size: rem(98px);
+        }
+      }
+    }
+  }
+
+  &-controls {
+    display: none;
+
+    &__prev, &__next {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      height: 40px;
+      width: 40px;
+      margin-top: rem(-20px);
+      color: $white;
+      background-color: $fun-blue;
+      text-align: center;
+      line-height: 40px;
+      font-size: rem(20px);
+      cursor: pointer;
+      transition: all .5s ease;
+    }
+
+    &__prev {
+      left: 0;
+    }
+
+    &__next {
+      right: 0;
+    }
+
+    &__prev:hover,
+    &__next:hover {
+      background-color: $cornflower-blue;
+    }
+  }
+
+  &-indicator {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -65%);
+    z-index: 2;
+
+    @media #{$mobile_land__640} {
+      top: 52%;
+      transform: translate(-50%, -52%);
+    }
+
+    @media #{$tablet_land__1024} {
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media #{$HD__screens__1920} {
+      top: 55%;
+      transform: translate(-50%, -55%);
+    }
+
+    & span {
+      display: inline-block;
+      width: 20px;
+      height: 2px;
+      background-color: $white;
+      margin: rem(0 3px);
+      cursor: pointer;
+
+      @media #{$HD__screens__1920} {
+        width: 40px;
+        height: 4px;
+      }
+
+      &.active {
+        background-color: $fun-blue;
+      }
+    }
+  }
+}
+
+// Animacja
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* ----- END OF HERO ----- */
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

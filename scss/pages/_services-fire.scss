@@ -1,0 +1,491 @@
+.fire-cleaning {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__heading {
+    width: 100%;
+
+    &::before {
+      content: url("../images/shape03.svg");
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+
+  @media #{$HD__screens__1920} {
+    padding-bottom: rem(210px);
+  }
+
+  &-img {
+
+    @media #{$HD__screens__1920} {
+      //width: inherit;
+      max-width: none;
+      width: 100%;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(0 20px);
+
+    @media #{$mobile_land__640} {
+      padding: rem(0 40px);
+    }
+
+    @media #{$tablet__768} {
+      padding: rem(0 60px);
+    }
+
+    @media #{$tablet_land__1024} {
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    @media #{$desktop__1280} {
+      padding: rem(0 80px);
+    }
+
+    @media #{$large__screens__1440} {
+      padding: rem(0 100px);
+    }
+
+    @media #{$full__screens__1600} {
+      padding: rem(0 120px);
+    }
+
+    @media #{$HD__screens__1920} {
+      padding: rem(0 278px 0 140px);
+    }
+
+
+    &--1 {
+      // margin-top: -72px;
+      // margin-top: -22.5%;
+      margin-top: -22.500vw;
+
+      @media #{$mobile_land__640} {
+        // margin-top: -146px;
+        // margin-top: -22.8125%;
+        margin-top: -22.813vw;
+      }
+
+      @media #{$tablet__768} {
+        // margin-top: -146px;
+        // margin-top: -23.046875%;
+        margin-top: -23.047vw;
+      }
+
+      @media #{$tablet_land__1024} {
+        flex-direction: row;
+        // margin-top: -150px;
+        // margin-top: -14.6484375%;
+        margin-top: -14.648vw;
+      }
+
+      @media #{$desktop__1280} {
+        // margin-top: -216px;
+        // margin-top: -16.875%;
+        margin-top: -16.875vw;
+      }
+
+      @media #{$large__screens__1440} {
+        // margin-top: -222px;
+        // margin-top: -15.416666666666667%;
+        margin-top: -15.417vw;
+      }
+
+      @media #{$full__screens__1600} {
+        // margin-top: -226px;
+        // margin-top: -14.125%;
+        margin-top: -14.125vw;
+      }
+
+      @media #{$HD__screens__1920} {
+        // margin-top: -270px;
+        // margin-top: -14.0625%;
+        margin-top: -14.063vw;
+      }
+
+      @media (min-width: 1921px) and (max-width: 2560px) {
+        // margin-top: -347px;
+        // margin-top: -13.5546875%;
+        margin-top: -13.555vw;
+      }
+    }
+
+
+    &--2, &--4 {
+
+      @media #{$tablet_land__1024} {
+        flex-direction: row-reverse;
+      }
+    }
+
+    &--3 {
+      position: relative;
+    }
+
+    &--4 {
+      @media #{$tablet_land__1024} {
+        padding-bottom: rem(150px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding-bottom: rem(180px);
+      }
+    }
+  }
+
+  &__col {
+    width: 100%;
+
+    &-title {
+      font-family: $font-title;
+      font-size: rem(30px);
+      padding-bottom: rem(34px);
+      text-align: center;
+
+      @media #{$mobile_land__640} {
+        font-size: rem(40px);
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(71px);
+        text-align: left;
+      }
+    }
+
+    &-text {
+      font-family: $font-text;
+      font-size: rem(18px);
+      text-align: center;
+      padding-bottom: rem(30px);
+
+      @media #{$mobile_land__640} {
+        font-size: rem(20px);
+      }
+
+      @media #{$tablet_land__1024} {
+        padding-bottom: 0;
+        text-align: left;
+      }
+
+      @media #{$desktop__1280} {
+        font-size: rem(25px);
+      }
+
+      @media #{$large__screens__1440} {
+        font-size: rem(30px);
+      }
+    }
+
+    &--space1, &--space3, &--space5, &--space7 {
+      padding: rem(40px 20px);
+
+      @media #{$tablet_land__1024} {
+        padding: rem(40px 0);
+        width: 60%;
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-right: rem(131px);
+      }
+    }
+
+    &--space1, &--space5 {
+      @media #{$tablet_land__1024} {
+        padding: rem(0 60px 0 0);
+      }
+    }
+
+    &--space3, &--space7 {
+      @media #{$tablet_land__1024} {
+        padding: rem(0 0 0 60px);
+      }
+    }
+
+    &--space2, &--space4, &--space6, &--space8 {
+      @media #{$tablet_land__1024} {
+        width: 40%;
+      }
+    }
+
+    @media #{$desktop__1280} {
+      width: calc(100% / 2);
+    }
+
+  }
+
+  &__graphics {
+    width: 50%;
+    margin: 0 auto 1.875rem;
+    position: relative;
+
+    @media #{$tablet_land__1024} {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__shadow {
+
+    &--1 {
+      filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+
+    &--2, &--4 {
+      filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+
+    &--3 {
+      filter: drop-shadow(50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+  }
+
+  &__shape {
+
+    &--1 {
+      &::before {
+        content: url("../images/shape--05.svg");
+        position: absolute;
+        display: block;
+        width: 198px;
+        transform: scale(0.3);
+        left: -96px;
+        bottom: -104px;
+        z-index: -1;
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+          left: -92px;
+          bottom: -96px;
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+          left: -86px;
+          bottom: -83px;
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          left: -74px;
+          bottom: -58px;
+        }
+      }
+
+      &::after {
+        content: url("../images/shape--11.svg");
+        position: absolute;
+        display: block;
+        width: 192px;
+        right: -97px;
+        top: -97px;
+        z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+          right: -91px;
+          top: -71px;
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+          right: -37px;
+          top: -30px;
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+          right: 15px;
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+          right: 105px;
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          right: 140px;
+          top: -15px;
+        }
+      }
+    }
+
+    &--2 {
+      &::before {
+        content: url("../images/shape--06.svg");
+        position: absolute;
+        display: block;
+        width: 234px;
+        right: -129px;
+        top: -95px;
+        z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          right: -166px;
+          top: -90px;
+        }
+      }
+    }
+
+    &--3 {
+      &::before {
+        content: url("../images/shape--07.svg");
+        position: absolute;
+        display: block;
+        width: 281px;
+        left: -127px;
+        top: -101px;
+        z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          left: -93px;
+          top: -95px;
+        }
+      }
+
+      &::after {
+        content: url("../images/shape--08.svg");
+        position: absolute;
+        display: block;
+        width: 169px;
+        right: -95px;
+        bottom: -36px;
+        z-index: -1;
+        transform: scale(0.3);
+
+        @media #{$mobile_land__640} {
+          transform: scale(0.4);
+          right: -97px;
+          bottom: -14px;
+        }
+
+        @media #{$tablet__768} {
+          transform: scale(0.5);
+          bottom: -2px;
+        }
+
+        @media #{$desktop__1280} {
+          transform: scale(0.6);
+          bottom: 28px;
+          right: -62px;
+        }
+
+        @media #{$large__screens__1440} {
+          transform: scale(0.7);
+          right: 0px;
+        }
+
+        @media #{$full__screens__1600} {
+          transform: scale(0.8);
+          right: 75px;
+        }
+
+        @media #{$HD__screens__1920} {
+          transform: scale(1);
+          right: 100px;
+          bottom: 21px;
+        }
+      }
+    }
+  }
+
+
+  &__img {
+    filter: drop-shadow(1px 1px 0 $white)
+    drop-shadow(-1px 1px 0 $white)
+    drop-shadow(1px -1px 0 $white)
+    drop-shadow(-1px -1px 0 $white);
+
+    &--1, &--3 {
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

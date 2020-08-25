@@ -1,0 +1,113 @@
+.cookie {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: $fun-blue;
+  color: $white;
+  padding: rem(0 32px);
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+  transition: 400ms;
+  z-index: 25;
+
+  @media #{$tablet_land__1024} {
+    padding: rem(0 20px);
+  }
+
+  &.active {
+    bottom: 0;
+  }
+
+  &__ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: rem(20px 0);
+
+    @media #{$tablet_land__1024} {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    @media #{$HD__screens__1920} {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &-text {
+      display: block;
+      color: $white;
+      text-align: center;
+      font-size: rem(16px);
+
+      @media #{$tablet_land__1024} {
+        font-size: rem(18px);
+        text-align: left;
+        width: 80%;
+      }
+
+      @media #{$full__screens__1600} {
+        width: auto;
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(20px);
+      }
+    }
+
+    &-anchor {
+      font-family: $font-title--bold;
+      color: $catskill-white;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+
+    &-btn {
+      background: $cornflower-blue;
+      font-family: $font-title--bold;
+      border: 0;
+      color: $white;
+      padding: rem(12px 24px);
+      font-size: rem(18px);
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      margin-top: rem(20px);
+
+      @media #{$tablet_land__1024} {
+        width: 20%;
+        margin-top: 0;
+        font-size: rem(20px);
+        padding: rem(12px 34px);
+        margin-left: rem(40px);
+      }
+
+      @media #{$full__screens__1600} {
+        width: auto;
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(12px 48px);
+      }
+    }
+  }
+}
+
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

@@ -1,0 +1,770 @@
+.about-us {
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+
+    &-heading {
+      width: 100%;
+      position: relative;
+
+        &::before {
+          content: url("../images/shape02.svg");
+          width: 100%;
+          position: absolute;
+          top: 0;
+          z-index: -1;
+        }
+
+      &-img {
+        @media #{$HD__screens__1920} {
+          //width: inherit;
+          max-width: none;
+          width: 100%;
+        }
+      }
+    }
+
+    &-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: rem(0 20px);
+
+      @media #{$mobile_land__640} {
+        padding: rem(0 40px);
+      }
+
+      @media #{$tablet__768} {
+        padding: rem(0 60px);
+      }
+
+      @media #{$tablet_land__1024} {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 278px);
+      }
+
+      &--1 {
+        // margin-top: -72px;
+        // margin-top: -22.5%;
+        margin-top: -22.500vw;
+
+        @media #{$mobile_land__640} {
+          // margin-top: -146px;
+          // margin-top: -22.8125%;
+          margin-top: -22.813vw;
+        }
+
+        @media #{$tablet__768} {
+          // margin-top: -177px;
+          // margin-top: -23.046875%;
+          margin-top: -23.047vw;
+        }
+
+        @media #{$tablet_land__1024} {
+          // margin-top: -150px;
+          // margin-top: -14.6484375%;
+          margin-top: -14.648vw;
+        }
+
+        @media #{$desktop__1280} {
+          // margin-top: -216px;
+          // margin-top: -16.875%;
+          margin-top: -16.875vw;
+        }
+
+        @media #{$large__screens__1440} {
+          // margin-top: -226px;
+          // margin-top: -15.694444444444444%;
+          margin-top: -15.694vw;
+        }
+
+        @media #{$full__screens__1600} {
+          // margin-top: -231px;
+          // margin-top: -14.4375%;
+          margin-top: -14.438vw;
+        }
+
+        @media #{$HD__screens__1920} {
+          // margin-top: -270px;
+          // margin-top: -14.0625%;
+          margin-top: -14.063vw;
+        }
+
+        @media (min-width: 1921px) and (max-width: 2560px) {
+          // margin-top: -347px;
+          // margin-top: -13.5546875%;
+          margin-top: -13.555vw;
+        }
+      }
+
+      &--2, &--3, &--4 {
+        padding-top: rem(60px);
+      }
+
+      &--2, &--4 {
+        flex-direction: column-reverse;
+
+        @media #{$tablet_land__1024} {
+          flex-direction: row;
+        }
+      }
+    }
+
+    &-col {
+      width: 100%;
+
+      &--2, &--3, &--6, &--7, &--8 {
+        @media #{$mobile_land__640} {
+          padding-top: rem(60px);
+        }
+
+        @media #{$tablet__768} {
+          padding-top: rem(100px);
+        }
+
+        @media #{$tablet_land__1024} {
+          padding-top: 0;
+        }
+      }
+
+      &--2, &--6 {
+
+        @media #{$tablet_land__1024} {
+          padding-left: rem(60px);
+        }
+
+        @media #{$large__screens__1440} {
+          padding-left: 0;
+        }
+      }
+
+      &--3, &--7 {
+
+        @media #{$tablet_land__1024} {
+          padding-right: rem(60px);
+        }
+
+        @media #{$large__screens__1440} {
+          padding-right: 0;
+        }
+      }
+
+      &--1, &--4, &--5, &--8 {
+        @media #{$tablet_land__1024} {
+          width: 40%;
+        }
+      }
+
+      &--2, &--3, &--6, &--7 {
+        @media #{$tablet_land__1024} {
+          width: 60%;
+        }
+      }
+
+      @media #{$desktop__1280} {
+        width: calc(100% / 2);
+      }
+
+      &__title {
+        font-family: $font-title;
+        font-size: rem(30px);
+        text-align: center;
+        padding: rem(34px 0);
+
+        @media #{$mobile_land__640} {
+          font-size: rem(40px);
+          padding: rem(0 0 34px);
+        }
+
+        @media #{$tablet_land__1024} {
+          text-align: left;
+        }
+
+        @media #{$HD__screens__1920} {
+          font-size: rem(54px);
+        }
+
+        &:not(.gas-mixture__col-title--1) {
+
+          @media #{$HD__screens__1920} {
+            font-size: rem(40px);
+          }
+        }
+      }
+
+      &__text {
+        font-family: $font-text;
+        font-size: rem(18px);
+        text-align: center;
+        padding-bottom: rem(30px);
+
+        @media #{$mobile_land__640} {
+          font-size: rem(20px);
+        }
+
+        @media #{$tablet_land__1024} {
+          padding-bottom: 0;
+          text-align: left;
+        }
+
+        @media #{$desktop__1280} {
+          font-size: rem(25px);
+        }
+
+        @media #{$large__screens__1440} {
+          font-size: rem(30px);
+        }
+      }
+    }
+
+    &-graphics {
+      width: 50%;
+      margin: rem(0 auto 30px);
+      position: relative;
+
+      @media #{$tablet_land__1024} {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    &-shape {
+
+      &--1 {
+        &::after {
+          content: url("../images/shape--01.svg");
+          position: absolute;
+          display: block;
+          width: 160px;
+          left: -80px;
+          bottom: -142px;
+          transform: scale(0.3);
+          z-index: -1;
+
+          @media #{$mobile_land__640} {
+            transform: scale(0.4);
+          }
+
+          @media #{$tablet__768} {
+            transform: scale(0.5);
+          }
+
+          @media #{$desktop__1280} {
+            transform: scale(0.6);
+          }
+
+          @media #{$large__screens__1440} {
+            transform: scale(0.7);
+          }
+
+          @media #{$full__screens__1600} {
+            transform: scale(0.8);
+          }
+
+          @media #{$HD__screens__1920} {
+            bottom: -25%;
+            transform: scale(1);
+          }
+        }
+      }
+
+      &--2 {
+        &::after {
+          content: url("../images/shape--02.svg");
+          position: absolute;
+          display: block;
+          width: 134px;
+          transform: scale(0.3);
+          right: -67px;
+          bottom: -100px;
+          z-index: -1;
+
+          @media #{$mobile_land__640} {
+            transform: scale(0.4);
+          }
+
+          @media #{$tablet__768} {
+            transform: scale(0.5);
+          }
+
+          @media #{$desktop__1280} {
+            transform: scale(0.6);
+          }
+
+          @media #{$large__screens__1440} {
+            transform: scale(0.7);
+          }
+
+          @media #{$full__screens__1600} {
+            transform: scale(0.8);
+          }
+
+          @media #{$HD__screens__1920} {
+            bottom: -10%;
+            transform: scale(1);
+          }
+        }
+      }
+
+      &--3 {
+        &::after {
+          content: url("../images/shape--03.svg");
+          position: absolute;
+          display: block;
+          width: 251px;
+          transform: scale(0.3);
+          left: -114px;
+          top: -131px;
+          z-index: -1;
+
+          @media #{$mobile_land__640} {
+            transform: scale(0.4);
+          }
+
+          @media #{$tablet__768} {
+            transform: scale(0.5);
+          }
+
+          @media #{$desktop__1280} {
+            transform: scale(0.6);
+          }
+
+          @media #{$large__screens__1440} {
+            transform: scale(0.7);
+          }
+
+          @media #{$full__screens__1600} {
+            transform: scale(0.8);
+          }
+
+          @media #{$HD__screens__1920} {
+            transform: scale(1);
+            left: -80px;
+            top: -137px;
+          }
+        }
+      }
+
+      &--4 {
+        &::before {
+          content: url("../images/shape--04.svg");
+          position: absolute;
+          display: block;
+          width: 222px;
+          transform: scale(0.3);
+          right: -109px;
+          top: -92px;
+          z-index: -1;
+
+          @media #{$mobile_land__640} {
+            transform: scale(0.4);
+          }
+
+          @media #{$tablet__768} {
+            transform: scale(0.5);
+          }
+
+          @media #{$desktop__1280} {
+            transform: scale(0.6);
+            right: -100px;
+          }
+
+          @media #{$large__screens__1440} {
+            transform: scale(0.7);
+          }
+
+          @media #{$full__screens__1600} {
+            transform: scale(0.8);
+          }
+
+          @media #{$HD__screens__1920} {
+            transform: scale(1);
+            top: -59px;
+          }
+        }
+
+        &::after {
+          content: url("../images/shape--09.svg");
+          position: absolute;
+          display: block;
+          width: 118px;
+          left: -57px;
+          bottom: -84px;
+          transform: scale(0.3);
+          z-index: -1;
+
+          @media #{$mobile_land__640} {
+            transform: scale(0.4);
+          }
+
+          @media #{$tablet__768} {
+            transform: scale(0.5);
+          }
+
+          @media #{$tablet_land__1024} {
+            bottom: -55px;
+          }
+
+          @media #{$desktop__1280} {
+            transform: scale(0.6);
+            left: -18px;
+            bottom: -22px;
+          }
+
+          @media #{$large__screens__1440} {
+            transform: scale(0.7);
+            left: 25px;
+            bottom: -25px;
+          }
+
+          @media #{$full__screens__1600} {
+            transform: scale(0.8);
+            left: 86px;
+            bottom: -26px;
+          }
+
+          @media #{$HD__screens__1920} {
+            transform: scale(1);
+            left: 90px;
+            bottom: -29px;
+          }
+        }
+      }
+    }
+
+    &-shadow {
+
+      &--1, &--3 {
+        filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
+      }
+
+      &--2, &--4 {
+        filter: drop-shadow(50px 50px 70px rgba(25, 95, 169, 0.2));
+      }
+    }
+
+    &-img {
+      width: inherit;
+      filter: drop-shadow(1px 1px 0 $white)
+      drop-shadow(-1px 1px 0 $white)
+      drop-shadow(1px -1px 0 $white)
+      drop-shadow(-1px -1px 0 $white);
+
+      @media #{$tablet_land__1024} {
+        width: initial;
+        max-width: 100%;
+      }
+
+      //&:not(.about-us__article-img--1) {
+      //
+      //  filter: drop-shadow(1px 1px 0 $white)
+      //  drop-shadow(-1px 1px 0 $white)
+      //  drop-shadow(1px -1px 0 $white)
+      //  drop-shadow(-1px -1px 0 $white);
+      //
+      //  @media #{$tablet_land__1024} {
+      //    width: initial;
+      //    max-width: 100%;
+      //  }
+      //}
+
+      &--3, &--5 {
+        margin: 0 0 0 auto;
+      }
+    }
+  }
+
+  &__industries {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    //margin-top: 126px;
+    //margin-top: 6.563vw;
+    margin-top: 6.5625%;
+    overflow: hidden;
+
+    &::before {
+      content: url("../images/bg__5.svg");
+      display: block;
+      z-index: -1;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @media #{$mobile_land__640} {
+        left: -20%;
+      }
+
+      @media #{$tablet__768} {
+        left: -27%;
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 100%;
+        //left: -278px;
+        left: -14.479166666666668%;
+      }
+    }
+
+    &-title {
+      font-size: rem(25px);
+      font-family: $font-title--bold;
+      padding: rem(30px 20px 25px);
+      text-align: center;
+
+      @media #{$mobile_land__640} {
+        padding: rem(30px 0 30px);
+      }
+
+      @media #{$tablet__768} {
+        white-space: pre-line;
+        padding: rem(30px 40px 25px);
+      }
+
+      @media #{$tablet_land__1024} {
+        font-size: rem(30px);
+        padding: rem(30px 60px 30px);
+      }
+
+      @media #{$large__screens__1440} {
+        font-size: rem(35px);
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(40px);
+        padding: rem(103px 0 48px 0);
+        text-align: center;
+        margin-left: rem(-140px);
+      }
+    }
+
+    &-content {
+      display: flex;
+
+      &__wrap {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$mobile_land__640} {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+
+        @media #{$HD__screens__1920} {
+          justify-content: flex-start;
+          padding-left: rem(278px);
+        }
+      }
+    }
+
+    &-row {
+
+      @media #{$mobile_land__640} {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media #{$tablet_land__1024} {
+        flex-direction: row;
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-bottom: rem(35px);
+      }
+
+      &--1 {
+
+        @media #{$mobile_land__640} {
+         margin-right: rem(20px);
+        }
+
+        @media #{$tablet__768} {
+          margin-right: rem(30px);
+        }
+
+        @media #{$tablet_land__1024} {
+          margin-right: 0;
+        }
+      }
+
+      &--2 {
+
+        @media #{$desktop__1280} {
+          padding-bottom: rem(40px);
+        }
+
+
+        @media #{$HD__screens__1920} {
+          transform: translateX(162px);
+          padding-bottom: rem(122px);
+        }
+      }
+    }
+
+    &-box {
+      background-color: $white;
+      width: 240px;
+      margin: rem(0 0 20px);
+      padding: rem(36px 0);
+      box-shadow: 0px 0px 25px 5px rgba(25, 96, 170, 0.3);
+      border-radius: 5px;
+
+      @media #{$mobile_land__640} {
+        width: 280px;
+        padding: rem(51px 0);
+      }
+
+      @media #{$tablet__768} {
+        margin: rem(0 0 30px);
+      }
+
+      @media #{$tablet_land__1024} {
+        width: 230px;
+        padding: rem(21px 0);
+        margin-right: rem(12px);
+
+        &--4, &--7 {
+          margin-right: 0;
+        }
+      }
+
+      @media #{$desktop__1280} {
+        width: 268px;
+        padding: rem(35px 0);
+      }
+
+      @media #{$large__screens__1440} {
+        width: 278px;
+        padding: rem(40px 0);
+      }
+
+      @media #{$full__screens__1600} {
+        width: 298px;
+        padding: rem(50px 0);
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 308px;
+        padding: rem(39px 0);
+        margin: rem(0 12px 0 0);
+      }
+
+      &--1 {
+        padding: rem(36px 0 57.5px);
+
+        @media #{$mobile_land__640} {
+          padding: rem(51px 0 74px);
+        }
+
+        @media #{$tablet_land__1024} {
+          padding: rem(21px 0);
+        }
+
+        @media #{$desktop__1280} {
+          padding: rem(35px 0);
+        }
+
+        @media #{$large__screens__1440} {
+          padding: rem(40px 0);
+        }
+
+      }
+
+      &__graphics {
+
+        &-title {
+          text-align: center;
+          font-size: rem(18px);
+          font-family: $font-text--semibold;
+          white-space: pre-line;
+
+          @media #{$mobile_land__640} {
+            font-size: rem(20px);
+          }
+
+          @media #{$tablet_land__1024} {
+            font-size: rem(25px);
+          }
+
+          @media #{$HD__screens__1920} {
+            font-size: rem(30px);
+          }
+        }
+
+        &-img {
+          width: 80px;
+          margin: rem(0 auto 15px);
+
+          @media #{$mobile_land__640} {
+            margin: rem(0 auto 20px);
+          }
+
+          @media #{$tablet__768} {
+            margin: rem(0 auto 20px);
+          }
+
+          @media #{$desktop__1280} {
+            width: 90px;
+          }
+
+          @media #{$HD__screens__1920} {
+            width: 108px;
+            margin: rem(0 auto 26px);
+          }
+
+          &--1 {
+
+            @media #{$tablet_land__1024} {
+              margin: rem(0 auto 30px);
+            }
+
+            @media #{$desktop__1280} {
+              margin: rem(0 auto 38px);
+            }
+
+            @media #{$HD__screens__1920} {
+              margin: rem(0 auto 41px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

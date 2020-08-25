@@ -1,0 +1,44 @@
+// ----------------------------------------------------
+// ----- VARIABLES -----
+// ----------------------------------------------------
+
+// --- Font ---
+$font-base: "akrobatregular", sans-serif;
+$font-title: "akrobatblack", sans-serif;
+$font-text: "akrobatlight", sans-serif;
+$font-title--bold: "akrobatbold", sans-serif;
+$font-text--semibold: "akrobatsemibold", sans-serif;
+$font-heading: "good_timesregular", sans-serif;
+
+// --- Colors ---
+$white: #fff;
+$black: #000;
+$red-orange: #ff2d30;
+
+$catskill-white: #ecf3f7;
+$fun-blue: #1960aa;
+$black-squeeze: #e2ebf4;
+$mercury: #e4e4e4;
+$cornflower-blue: #6195ED;
+$oslo-gray: #85868A;
+
+$red-ribbon: #E70943;
+$bombay: #B4B8C3;
+
+
+// --- Animation ---
+$animationSpeed: 40s;
+$animate-hover: all 0.2s ease-in-out;
+
+
+// --- Media Queries ---
+$mobile_land__640: "(min-width: 640px)";
+$tablet__768: "(min-width: 768px)";
+$tablet_land__1024: "(min-width: 1024px)";
+$desktop__1280: "(min-width: 1280px)";
+$large__screens__1440: "(min-width: 1440px)";
+$full__screens__1600: "(min-width: 1600px)";
+$HD__screens__1920: "(min-width: 1920px)";
+$max__screen__2560: "(min-width: 1921px) and (max-width: 2560px)";
+
+// ----- END OF VARIABLES -----

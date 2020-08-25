@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3N Solutions</title>
+
+  <!-- Google Fonts -->
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55428215-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-55428215-1');
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WPSWZPV');</script>
+
+</head>
+
+<body>
+<!-- wrapper -->
+<section class="wrapper">
+  <!-- header-->
+  <header class="header">
+      <!-- navigation -->
+      <div class="navigation">
+        <section class="container">
+          <div class="navigation-container">
+            <div class="logo">
+              <a href="index.html" class="logo__link">
+                <img src="images/logo.svg" class="logo__img" alt="3ns logo"></a>
+            </div>
+            <button class="btn-toggle" id="btnToggle" aria-label="Open / Close Menu">
+              <div class="hamburger-container">
+                <div class="hamburger">
+                  <span class="hamburger__line"></span>
+                  <span class="hamburger__line"></span>
+                  <span class="hamburger__line"></span>
+                  <span class="hamburger__line"></span>
+                </div>
+              </div>
+            </button>
+            <nav class="nav-menu" role="navigation">
+              <ul class="menu">
+                <li class="menu__item menu__item--dropdown">
+                  <a href="#" class="menu__link">Usługi<span class="menu__link--arrow"></span></a>
+                  <ul class="menu-submenu menu-submenu--1 js--menu-submenu">
+                    <li class="menu-submenu__item">
+                      <a href="konserwacja.html" class="menu-submenu__link js-anchor--link">Konserwacja urządzeń elektroenergetycznych
+                      </a>
+                    </li>
+                    <li class="menu-submenu__item">
+                      <a href="czyszczenie.html" class="menu-submenu__link js-anchor--link">Czyszczenie urządzeń elektrycznych
+                      </a>
+                    </li>
+                    <li class="menu-submenu__item">
+                      <a href="czyszczenie-hydrodynamiczne.html" class="menu-submenu__link js-anchor--link">Czyszczenie hydrodynamiczne
+                      </a>
+                    </li>
+                    <li class="menu-submenu__item">
+                      <a href="czyszczenie-pozarowe.html" class="menu-submenu__link js-anchor--link">Czyszczenie popożarowe
+                      </a>
+                    </li>
+                    <li class="menu-submenu__item">
+                      <a href="pomiary.html" class="menu-submenu__link js-anchor--link">Pomiary termowizyjne i elektryczne
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="realizacje.html" class="menu__link menu__link--space js-anchor--link">Realizacje</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Technologie<span class="menu__link--arrow"></span></a>
+                  <ul class="menu-submenu menu-submenu--2 js--menu-submenu">
+                    <li class="menu-submenu__item">
+                      <a href="mieszanka-gazow.html" class="menu-submenu__link js-anchor--link">Mieszanka Gazów
+                      </a>
+                    </li>
+                    <li class="menu-submenu__item">
+                      <a href="czyszczenie-hydrodynamiczne-2.html" class="menu-submenu__link js-anchor--link">Czyszczenie hydrodynamiczne
+                      </a>
+                    </li>
+                    <li class="menu-submenu__item">
+                      <a href="ozonowanie.html" class="menu-submenu__link js-anchor--link">Ozonowanie
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a href="o-nas.html" class="menu__link menu__link--space js-anchor--link">O nas</a>
+                </li>
+                <li class="menu__item">
+                  <a href="kontakt.html" class="menu__link js-anchor--link">Kontakt</a>
+                </li>
+                <li class="menu__item menu-item--ue">
+                  <a href="przetargi.html" class="menu__link-ue js-anchor--link">
+                    <img src="images/logo-ue.svg" class="menu__link-ue__img" alt="European Union">
+                  </a>
+                </li>
+
+                <li class="menu__item menu__item--social">
+                  <a href="https://www.youtube.com/channel/UCIG0oIqClmQGIiZorvGrTLQ" target="_blank" class="menu__link--yt js-anchor--link"><i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/3nsolutions/" target="_blank" class="menu__link--in js-anchor--link"><i class="fab fa-linkedin "></i></a>
+                </li>
+
+                <li class="menu__item menu__item--color">
+                <span class="menu__link-dropdown menu__link-icon">
+                  <img src="images/ask.svg" class="menu__link-img" alt="zapytanie">
+                </span>
+                  <ul class="menu-dropdown js--menu-submenu">
+                    <li class="menu-dropdown__item">
+                      <span class="menu-dropdown__text menu-dropdown__text--mobile">+48 22 233 00 50</span>
+                      <a class="menu-dropdown__link menu-dropdown__link--mobile js-anchor--link" href="tel:+48 22 233 00 50">
+                        <img src="images/smartphone_2.svg" class="menu-dropdown__icon menu-dropdown__icon--1" alt="mobile"></a>
+                    </li>
+                    <li class="menu-dropdown__item">
+                      <span class="menu-dropdown__text menu-dropdown__text--envelop">biuro@3ns.com.pl</span>
+                      <a class="menu-dropdown__link menu-dropdown__link--envelop js-anchor--link" href="mailto:biuro@3ns.com.pl">
+                        <img src="images/envelope_2.svg" class="menu-dropdown__icon menu-dropdown__icon--2" alt="email"></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+        </section>
+      </div>
+      <!-- end of navigation -->
+  </header>
+  <!-- end of header -->
+
+  <!-- hero banner -->
+  <section class="hero">
+    <div class="hero__overlay">
+      <div class="hero__inner">
+        <figure class="hero__video">
+            <video src="video/movie.mp4" autoplay loop playsinline muted></video>
+        </figure>
+        <figure class="hero__background">
+          <picture>
+            <source srcset="images/bg.webp" type="image/webp" class="hero__background-img">
+            <source srcset="images/bg.jpg" type="image/jpeg" class="hero__background-img">
+            <img src="images/bg.jpg" class="hero__background-img" alt="banner image">
+          </picture>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <filter id="blur">
+              <feGaussianBlur stdDeviation="3" />
+            </filter>
+          </svg>
+        </figure>
+        <div class="hero__content">
+          <figure class="hero__content-logo">
+            <img src="images/hero_logo.svg" alt="3ns logo banner">
+          </figure>
+
+          <div class="hero-slider">
+            <div class="hero-slider__slide active">
+              <h1 class="hero-slider__slide-title">Profesjonalne usługi
+                z wieloletnim doświadczeniem</h1>
+            </div>
+            <div class="hero-slider__slide">
+              <h1 class="hero-slider__slide-title">Pracujemy do 24 godzin
+                7 dni w tygodniu,
+                365 dni w roku!</h1>
+            </div>
+            <div class="hero-slider__slide">
+              <h1 class="hero-slider__slide-title">Skuteczność oraz
+                bezpieczeństwo</h1>
+            </div>
+          </div>
+          <div class="hero-controls">
+            <div class="hero-controls__prev"><</div>
+            <div class="hero-controls__next">></div>
+          </div>
+
+          <div class="hero-indicator"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of hero banner -->
+
+  <!-- modal -->
+  <section class="modal">
+    <div id="openModal" class="modal__container">
+      <div class="modal__wrapper">
+        <button class="modal__close js-close"></button>
+        <div class="modal__content">
+          <h2 class="modal__title">Masz pytania dotyczącą naszej oferty?</h2>
+          <p class="modal__text">Zostaw nam maila, a my skontaktujemy się z Tobą, odpowiemy na wszystkie pytania oraz zrobimy BEZPŁATNĄ wycenę</p>
+
+          <form id="modalForm" class="modal__form" method="post" action="send-modal--script.php">
+            <div class="modal__form-row modal__form-row--1">
+              <input class="modal__form-input" type="text" name="name" id="name" placeholder="Twoje imię" required pattern=.{3,} data-error="Wypełnij to pole">
+            </div>
+            <div class="modal__form-row modal__form-row--2">
+              <input class="modal__form-input" type="email" name="email" id="email" placeholder="Wpisz swój e-mail" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+            </div>
+            <a href="#" role="button" class="modal__btn-more">Więcej</a>
+            <div class="modal__form-more">
+              <div class="modal__form-row modal__form-row--3">
+                <input class="modal__form-input" type="number" name="phone" id="phone" placeholder="Telefon kontaktowy">
+              </div>
+              <div class="modal__form-row modal__form-row--4">
+                <textarea class="modal__form-textarea" name="message" id="message" cols="30" rows="3" placeholder="Wiadomość"></textarea>
+              </div>
+            </div>
+
+            <div class="modal__form-row modal__form-row--5">
+              <input id="terms" type="checkbox" class="modal__form-checkbox" required data-error-text="Musisz wypełnić pole" name="terms">
+              <label class="modal__form-label" for="terms">
+                <span class="modal__form-checkbox__text">Oświadczam, że zapoznałem/am się z <a href="polityka-prywatnosci.html" target="_blank" class="modal__form-link"><span class="modal__form-checkbox__text--bold">Regulaminem</span></a></span>
+              </label>
+            </div>
+            <div class="honey-row">
+              <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
+              <input type="text" id="honey" name="honey">
+            </div>
+            <button class="modal__form-btn" type="submit">Wyślij</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <button class="modal__btn modal_btn--1 js-open">Kliknij proszę</button>
+  </section>
+<!--   end of modal -->
+
+  <!-- main -->
+  <main class="main">
+    <section class="container">
+      <h2 class="main__title">For clean and safe industry</h2>
+      <div class="main__boxes">
+        <div class="main__boxes-box main__boxes-box--1">
+          <figure class="main__boxes-box__icon main__boxes-box__icon--rad">
+            <img src="images/factory.svg" alt="3ns fabryka">
+          </figure>
+          <p class="main__boxes-box__text main__boxes-box__text--1">Firma 3N Solutions Sp. z o.o. specjalizuje się w kompleksowej konserwacji urządzeń elektrycznych oraz czyszczenia pomieszczeń produkcyjnych.</p>
+        </div>
+        <div class="main__boxes-box main__boxes-box--2">
+          <div class="main__boxes-box__wrap">
+            <figure class="main__boxes-box__icon main__boxes-box__icon--coo">
+              <img src="images/cooperation.svg" alt="współpraca">
+            </figure>
+            <p class="main__boxes-box__text main__boxes-box__text--2">Od 2010 roku budujemy doświadczenie oraz relacje z klientami na terenie całego kraju poprawiając bezpieczeństwo oraz efektywność działania systemów elektro-energetycznych w zakładach naszych Partnerów.</p>
+          </div>
+        </div>
+        <div class="main__boxes-box main__boxes-box--3">
+          <div class="main__boxes-box__wrap">
+            <figure class="main__boxes-box__icon main__boxes-box__icon--bad">
+              <img src="images/badge.svg" alt="bezpieczeństwo">
+            </figure>
+            <p class="main__boxes-box__text main__boxes-box__text--3">Najbardziej efektywna z dostępnych na rynku technologia czyszczenia urządzeń elektrycznych.
+              Zastosowanie metody suchych gazów o ciśnieniu nie przekraczającym 0,5-1,5 bar</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <div class="main__services">
+        <section class="container">
+          <h2 class="main__services-title">Nasze Usługi</h2>
+
+          <div class="main__services-parallax">
+
+            <div class="main__services-parallax__box main__services-parallax__box--first">
+
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--first main__services-parallax__box-clip--one">
+                <figure class="main__services-parallax__box-img main__services-parallax__box-img--first"></figure>
+              </div>
+
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--second main__services-parallax__box-clip--two">
+                <div class="main__services-parallax__box-wrap">
+                  <h3 class="main__services-parallax__box-wrap__title">Konserwacja urządzeń elektroenergetycznych</h3>
+                  <p class="main__services-parallax__box-wrap__text">Konserwacja urządzeń elektrycznych jest elementem niezbędnym prawidłowego utrzymania ruchu w zakładach produkcyjnych. Bez przestoju w produkcji.</p>
+                  <button class="main__services-parallax__box-wrap__btn"><a href="konserwacja.html" class="main__services-parallax__box-wrap__anchor">Więcej</a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main__services-parallax__box main__services-parallax__box--second">
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--third main__services-parallax__box-clip--one">
+                <figure class="main__services-parallax__box-img main__services-parallax__box-img--second observable"></figure>
+              </div>
+
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--fourth main__services-parallax__box-clip--two main__services-parallax__box-clip--two-color">
+                <div class="main__services-parallax__box-wrap main__services-parallax__box-wrap--second">
+                  <h3 class="main__services-parallax__box-wrap__title">Czyszczenie urządzeń elektrycznych</h3>
+                  <p class="main__services-parallax__box-wrap__text">Stosujemy technologię opartą na innowacyjnym medium czyszczącym, którego głównym elementem jest specjalnie przygotowywana na rampie gazowej samochodu technologicznego, mieszanka gazów.</p>
+                  <button class="main__services-parallax__box-wrap__btn"><a href="czyszczenie.html">Więcej</a> </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main__services-parallax__box main__services-parallax__box--third">
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--fifth main__services-parallax__box-clip--one">
+                <figure class="main__services-parallax__box-img main__services-parallax__box-img--third observable"></figure>
+              </div>
+
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--sixth main__services-parallax__box-clip--two">
+                <div class="main__services-parallax__box-wrap main__services-parallax__box-wrap--third">
+                  <h3 class="main__services-parallax__box-wrap__title">Czyszczenie hydrodynamiczne</h3>
+                  <p class="main__services-parallax__box-wrap__text">Poprawa efektywności oraz bezpieczeństwa działania zakładów naszych Klientów, poprzez stosowaną przez nas technologię czyszczenia powierzchni z wykorzystaniem wysokich ciśnień, która pozwala szybko i skutecznie usuwać wszelkie zabrudzenia. Nasze rozwiązania znajdują szerokie zastosowanie niemal we wszystkich gałęziach przemysłu. Korzystając z mobilnych agregatów i specjalistycznych dysz, możemy docierać do trudno dostępnych miejsc.</p>
+                  <button class="main__services-parallax__box-wrap__btn"><a href="czyszczenie-hydrodynamiczne.html">Więcej</a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main__services-parallax__box main__services-parallax__box--fourth">
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--seventh main__services-parallax__box-clip--one">
+                <figure class="main__services-parallax__box-img main__services-parallax__box-img--fourth observable"></figure>
+              </div>
+
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--eighth main__services-parallax__box-clip--two main__services-parallax__box-clip--two-color">
+                <div class="main__services-parallax__box-wrap main__services-parallax__box-wrap--fourth">
+                  <h3 class="main__services-parallax__box-wrap__title">Czyszczenie popożarowe</h3>
+                  <p class="main__services-parallax__box-wrap__text">Innowacyjna metoda suchej mieszanki gazów, pozwala
+                    na 100% usunięcia sadzy z podzespołów. Czas usunięcia awarii
+                    wywołanej przez pożar, jest bardzo krótki. Metoda 3ns zapobiega także korozji.</p>
+                  <button class="main__services-parallax__box-wrap__btn"><a href="czyszczenie-pozarowe.html" class="main__services-parallax__box-wrap__anchor">Więcej</a></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="main__services-parallax__box main__services-parallax__box--fifth">
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--ninth main__services-parallax__box-clip--one">
+                <figure class="main__services-parallax__box-img main__services-parallax__box-img--fifth observable"></figure>
+              </div>
+
+              <div class="main__services-parallax__box-clip main__services-parallax__box-clip--tenth main__services-parallax__box-clip--two">
+                <div class="main__services-parallax__box-wrap main__services-parallax__box-wrap--fifth">
+                  <h3 class="main__services-parallax__box-wrap__title">Pomiary termowizyjne i elektryczne</h3>
+                  <p class="main__services-parallax__box-wrap__text">Kompleksowe wykonanie pomiarów instalacji elektro-energetycznych. W ramach usługi jesteśmy w stanie przygotować raport obejmujący analizę stanu technicznego podzespołów na bazie pomiarów termowizyjnych oraz pomiarów elektrycznych.</p>
+                  <button class="main__services-parallax__box-wrap__btn"><a href="pomiary.html">Więcej</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="main__why">
+        <section class="container">
+        <h2 class="main__why-title">Dlaczego 3n Solutions?</h2>
+        <div class="main__why-container">
+          <ul class="main__why-container__tabs">
+            <li class="main__why-container__tabs-el main__why-container__tabs-el--1 js-tabs-el">
+              <a href="#tab1" class="main__why-container__tabs-el__link">
+                <img src="images/piggybank.svg" class="main__why-container__tabs-el__img main__why-container__tabs-el__img--1">
+                <span class="main__why-container__tabs-el__title">Obniżenie kosztów</span>
+              </a>
+            </li>
+            <li class="main__why-container__tabs-el main__why-container__tabs-el--2 js-tabs-el is-active">
+              <a href="#tab2" class="main__why-container__tabs-el__link">
+                <img src="images/badge.svg" class="main__why-container__tabs-el__img main__why-container__tabs-el__img--2">
+                <span class="main__why-container__tabs-el__title">Efektywność</span>
+              </a>
+            </li>
+            <li class="main__why-container__tabs-el main__why-container__tabs-el--3 js-tabs-el">
+              <a href="#tab3" class="main__why-container__tabs-el__link">
+                <img src="images/protection.svg" class="main__why-container__tabs-el__img main__why-container__tabs-el__img--3">
+                <span class="main__why-container__tabs-el__title">Bezpieczeństwo</span>
+              </a>
+            </li>
+          </ul>
+
+          <div id="tab1" class=" main__why-container__tabs-content main__why-container__tabs-content--1 js-tabs-content">
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab-1">
+              <p class="main__why-container__tabs-content__tab-text">Zwiększenie żywotności podzespołów</p>
+            </div>
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--2">
+              <p class="main__why-container__tabs-content__tab-text">Eliminacja ryzyka przestojów lini technologicznych</p>
+            </div>
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--3">
+              <p class="main__why-container__tabs-content__tab-text">Eliminacja ryzyka przestojów lini technologicznych</p>
+            </div>
+          </div>
+
+          <div id="tab2" class=" main__why-container__tabs-content main__why-container__tabs-content--2 js-tabs-content is-active">
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--1">
+              <p class="main__why-container__tabs-content__tab-text">Usunięcie zabrudzeń z miejsc niedostępnych dla innych metod czyszczenia</p>
+            </div>
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--2">
+              <p class="main__why-container__tabs-content__tab-text">Możliwość wykrycia potencjalnych usterek systemu w trakcie czyszczenia</p>
+            </div>
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--3">
+              <p class="main__why-container__tabs-content__tab-text">Skuteczne czyszczenie nawet do 100m2 instalacji w 8 godzin</p>
+            </div>
+          </div>
+
+          <div id="tab3" class=" main__why-container__tabs-content main__why-container__tabs-content--3 js-tabs-content">
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--1">
+              <p class="main__why-container__tabs-content__tab-text">Eliminacja ryzyka pożaru instalacji elektrycznych</p>
+            </div>
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--2">
+              <p class="main__why-container__tabs-content__tab-text">Całkowite bezpieczeństwo delikatnych elementów instalacji takich jak: układy scalone, elektronika, izolacja</p>
+            </div>
+            <div class="main__why-container__tabs-content__tab main__why-container__tabs-content__tab--3">
+              <p class="main__why-container__tabs-content__tab-text">Brak zastosowania środków chemicznych</p>
+            </div>
+          </div>
+        </div>
+        </section>
+      </div>
+
+      <div class="main__realizations">
+        <h2 class="main__realizations-title">Realizacje</h2>
+        <div class="main__realizations-video">
+          <div class="main__realizations-video__overlay">
+            <figure class="main__realizations-video__inner">
+              <iframe src="https://www.youtube.com/embed/vU1qqXh47HQ?start=4&end=97&controls=0&mute=1&autoplay=1&loop=1&playlist=vU1qqXh47HQ&showinfo=0&rel=0;" frameborder="0" allow="allowfullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="ytplayer" class="main__realizations-video__youtube"></iframe>
+            </figure>
+          </div>
+        </div>
+        <div class="main__realizations-wrapper">
+          <div class="main__realizations-slider">
+            <div id="one" class="main__realizations-slider__content">
+              <div class="main__realizations-slider__content-after">
+                <picture>
+                  <source srcset="images/slide2.webp" type="image/webp">
+                  <source srcset="images/slide2.jpg" type="image/jpeg">
+                  <img src="images/slide2.jpg">
+                </picture>
+                <div class="main__realizations-slider__content-afterPosition main__realizations-slider__content-afterLabel">
+                  Po
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-before">
+                <div class="main__realizations-slider__content-before__inset">
+                  <picture>
+                    <source srcset="images/slide1.webp" type="image/webp">
+                    <source srcset="images/slide1.jpg" type="image/jpeg">
+                    <img src="images/slide1.jpg">
+                  </picture>
+                  <div class="main__realizations-slider__content-beforePosition main__realizations-slider__content-beforeLabel">
+                    Przed
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-handle">
+                <span class="main__realizations-slider__content-handle__left-arrow"></span>
+                <span class="main__realizations-slider__content-handle__right-arrow"></span>
+              </div>
+
+            </div>
+
+            <div id="two" class="main__realizations-slider__content">
+              <div class="main__realizations-slider__content-after">
+                <picture>
+                  <source srcset="images/slide4.webp" type="image/webp">
+                  <source srcset="images/slide4.jpg" type="image/jpeg">
+                  <img src="images/slide4.jpg">
+                </picture>
+                <div class="main__realizations-slider__content-afterPosition main__realizations-slider__content-afterLabel">
+                  Po
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-before">
+                <div class="main__realizations-slider__content-before__inset">
+                  <picture>
+                    <source srcset="images/slide3.webp" type="image/webp">
+                    <source srcset="images/slide3.jpg" type="image/jpeg">
+                    <img src="images/slide3.jpg">
+                  </picture>
+                  <div class="main__realizations-slider__content-beforePosition main__realizations-slider__content-beforeLabel">
+                    Przed
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-handle">
+                <span class="main__realizations-slider__content-handle__left-arrow"></span>
+                <span class="main__realizations-slider__content-handle__right-arrow"></span>
+              </div>
+            </div>
+
+            <div id="three" class="main__realizations-slider__content">
+              <div class="main__realizations-slider__content-after">
+                <picture>
+                  <source srcset="images/slide6.webp" type="image/webp">
+                  <source srcset="images/slide6.jpg" type="image/jpeg">
+                  <img src="images/slide6.jpg">
+                </picture>
+                <div class="main__realizations-slider__content-afterPosition main__realizations-slider__content-afterLabel">
+                  Po
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-before">
+                <div class="main__realizations-slider__content-before__inset">
+                  <picture>
+                    <source srcset="images/slide5.webp" type="image/webp">
+                    <source srcset="images/slide5.jpg" type="image/jpeg">
+                    <img src="images/slide5.jpg">
+                  </picture>
+                  <div class="main__realizations-slider__content-beforePosition main__realizations-slider__content-beforeLabel">
+                    Przed
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-handle">
+                <span class="main__realizations-slider__content-handle__left-arrow"></span>
+                <span class="main__realizations-slider__content-handle__right-arrow"></span>
+              </div>
+            </div>
+
+            <div id="four" class="main__realizations-slider__content">
+              <div class="main__realizations-slider__content-after">
+                <picture>
+                  <source srcset="images/slide8.webp" type="image/webp">
+                  <source srcset="images/slide8.jpg" type="image/jpeg">
+                  <img src="images/slide8.jpg">
+                </picture>
+                <div class="main__realizations-slider__content-afterPosition main__realizations-slider__content-afterLabel">
+                  Po
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-before">
+                <div class="main__realizations-slider__content-before__inset">
+                  <picture>
+                    <source srcset="images/slide7.webp" type="image/webp">
+                    <source srcset="images/slide7.jpg" type="image/jpeg">
+                    <img src="images/slide7.jpg">
+                  </picture>
+                  <div class="main__realizations-slider__content-beforePosition main__realizations-slider__content-beforeLabel">
+                    Przed
+                  </div>
+                </div>
+              </div>
+
+              <div class="main__realizations-slider__content-handle">
+                <span class="main__realizations-slider__content-handle__left-arrow"></span>
+                <span class="main__realizations-slider__content-handle__right-arrow"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="main__trusted">
+        <h2 class="main__trusted-title">Zaufali nam:</h2>
+
+        <div class="main__trusted-carousel">
+          <div class="main__trusted-carousel__track">
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--1">
+              <img src="images/logo_pge.svg" class="main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--1" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--2">
+              <img src="images/logo_jsw.svg" class="main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--2" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--3">
+              <img src="images/logo_pgnig.svg" class="main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--3" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--4">
+              <img src="images/logo_metro-waw.svg" class="main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--4" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--5">
+              <img src="images/logo_pge.svg" class=" main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--1" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--6">
+              <img src="images/logo_jsw.svg" class="main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--2" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--7">
+              <img src="images/logo_pgnig.svg" class="main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--3" alt="">
+            </figure>
+            <figure class="main__trusted-carousel__track-slide main__trusted-carousel__track-slide--8">
+              <img src="images/logo_metro-waw.svg" class=" main__trusted-carousel__track-slide__img main__trusted-carousel__track-slide__img--4" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main__technologies">
+        <section class="container">
+          <div class="main__technologies-wrapper">
+            <h2 class="main__technologies-title">Technologie</h2>
+            <div class="main__technologies-content">
+              <div class="main__technologies-content__box main__technologies-content__box--1">
+                <div class="main__technologies-content__box-col">
+                  <p class="main__technologies-content__box-text">Technologie dopasowujemy indywidualnie do każdego klienta, aby dowiedzieć się więcej skontaktuj się z nami.</p>
+                  <div class="main__technologies-content__box-contact main__technologies-content__box-contact--1">
+                    <a href="tel:+48 22 233 00 50" class="main__technologies-content__box-contact__anchor main__technologies-content__box-contact__anchor--1">
+                      <img src="images/smartphone_2.svg" class="main__technologies-content__box-contact__img main__technologies-content__box-contact__img--1" alt="mobile">
+                    </a>
+                    <span class="main__technologies-content__box-contact__text main__technologies-content__box-contact__text--mobile">+48 22 233 00 50</span>
+                  </div>
+
+                  <div class="main__technologies-content__box-contact main__technologies-content__box-contact--2">
+                    <a href="mailto:biuro@3ns.com.pl" class="main__technologies-content__box-contact__anchor main__technologies-content__box-contact__anchor--2">
+                      <img src="images/envelope_2.svg" class="main__technologies-content__box-contact__img main__technologies-content__box-contact__img--2" alt="email"></a>
+                    <span class="main__technologies-content__box-contact__text main__technologies-content__box-contact__text--envelope">biuro@3ns.com.pl</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main__technologies-content__box main__technologies-content__box--2">
+                <div class="main__technologies-content__box-child">
+                  <div class="main__technologies-content__box-rectangle main__technologies-content__box-rectangle--1"></div>
+                  <h3 class="main__technologies-content__box-title">Mieszanka gazów</h3>
+                  <p class="main__technologies-content__box-text">Mieszanka dociera w niedostępne dla tradycyjnych metod miejsca
+                    i zakamarki podzespołów.
+                    Jest przy tym całkowicie sucha,
+                    nie powoduje zawilgocenia,
+                    nie wchodzi w reakcje fizyczne,
+                    ani chemiczne z czyszczonymi elementami.</p>
+                  <a href="mieszanka-gazow.html" role="button" class="main__technologies-content__box-btn">Więcej</a>
+                </div>
+    
+                <div class="main__technologies-content__box-child">
+                  <div class="main__technologies-content__box-rectangle main__technologies-content__box-rectangle--2"></div>
+                  <h3 class="main__technologies-content__box-title">Ozonowanie</h3>
+                  <p class="main__technologies-content__box-text">Ozonowanie jest metodą,
+                    do której wykorzystywany jest
+                    gaz – ozon (O3) czasem nazywany aktywnym tlenem, który jest jednym z najskuteczniejszych znanych środków dezynfekujących.</p>
+                  <a href="ozonowanie.html" role="button" class="main__technologies-content__box-btn">Więcej</a>
+                </div>
+              </div>
+              <div class="main__technologies-content__box main__technologies-content__box--3">
+                <div class="main__technologies-content__box-child">
+                  <div class="main__technologies-content__box-rectangle main__technologies-content__box-rectangle--3"></div>
+                  <h3 class="main__technologies-content__box-title">Czyszczenie hydrodynamiczne</h3>
+                  <p class="main__technologies-content__box-text">Profesjonalne usługi
+                    dla przemysłu: Czyszczenie hydrodynamiczne, Próżniowy załadunek odpadów, odkurzanie, Renowacja konstrukcji, Specjalistyczna wiedza inżynierska - rozwiązania szyte
+                    na miarę.</p>
+                  <a href="czyszczenie-hydrodynamiczne-2.html" role="button" class="main__technologies-content__box-btn">Więcej</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+  </main>
+  <!-- end of main -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <section class="container">
+      <div class="footer-content">
+        <div class="footer-content__top">
+          <figure class="footer-content__top-left">
+            <img src="images/logo.svg">
+          </figure>
+          <figure class="footer-content__top-right">
+            <img src="images/fe.svg" class="footer-content__top-right__img footer-content__top-right__img--1" alt="">
+            <img src="images/rp.svg" class="footer-content__top-right__img footer-content__top-right__img--2" alt="">
+            <img src="images/pl.svg" class="footer-content__top-right__img footer-content__top-right__img--3" alt="">
+            <img src="images/logo-ue.svg" class="footer-content__top-right__img footer-content__top-right__img--4" alt="">
+          </figure>
+        </div>
+        <div class="footer-content__bottom">
+          <div class="footer-content__bottom-left">
+            <div class="footer-content__bottom-left__details footer-content__bottom-left__details--1">
+              <h4 class="footer-content__bottom-left__details-title footer-content__bottom-left__details-title--1">Kontakt</h4>
+              <span class="footer-content__bottom-left__details-email">biuro@3ns.com.pl</span>
+              <span class="footer-content__bottom-left__details-phone">+48 22 233 00 50</span>
+            </div>
+            <div class="footer-content__bottom-left__details footer-content__bottom-left__details--2">
+              <div class="footer-content__bottom-left__details-wrap">
+                <h4 class="footer-content__bottom-left__details-title footer-content__bottom-left__details-title--2">Biuro Handlowe</h4>
+                <span class="footer-content__bottom-left__details-adress">ul Szeligowska 40 a
+                01-320 Warszawa</span>
+              </div>
+              <div class="footer-content__bottom-left__details-wrap">
+                <h4 class="footer-content__bottom-left__details-title footer-content__bottom-left__details-title--3">Siedziba Firmy</h4>
+                <span class="footer-content__bottom-left__details-adress">ul. Złota 61/100,
+                00-819 Warszawa
+              </span>
+              </div>
+            </div>
+          </div>
+          <div class="footer-content__bottom-center">
+            <div class="footer-content__bottom-center__content">
+              <h4 class="footer-content__bottom-center__title">Znajdziesz Nas</h4>
+              <a href="https://www.youtube.com/channel/UCIG0oIqClmQGIiZorvGrTLQ" target="_blank" class="footer-content__bottom-center__social footer-content__bottom-center__social--yt"><img src="images/logo-yt.svg" class="footer-content__bottom-center__social-img footer-content__bottom-center__social-img--yt">
+              </a>
+              <a href="https://www.linkedin.com/company/3nsolutions/" target="_blank" class="footer-content__bottom-center__social footer-content__bottom-center__social--in"><img src="images/logo-linkedIn.svg" class="footer-content__bottom-center__social-img footer-content__bottom-center__social-img--in"></a>
+            </div>
+          </div>
+          <div class="footer-content__bottom-right">
+            <div class="footer-content__bottom-right__details footer-content__bottom-right__details--1">
+              <span class="footer-content__bottom-right__details-3ns">3N Solutions Sp. z o.o.</span>ul. Złota 61/100
+              00-819 Warszawa
+            </div>
+            <div class="footer-content__bottom-right__details footer-content__bottom-right__details--2">
+              <span class="footer-content__bottom-right__details-krs">KRS:0000257515, Sąd Rejonowy dla m.st.
+                Warszawy XII Wydział Gospodarczy Krajowego
+                Rejestru Sądowego NIP:5213388077, REGON:140555502
+                Kapitał zakładowy:50 000 zł (wpłacony w całości)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <!-- end of footer -->
+
+  <!-- cookie -->
+    <div class="cookie">
+      <div class="cookie__ctn">
+        <p class="cookie__ctn-text">Używamy plików cookies, aby dostosować treści dostępne w naszym serwisie do Państwa indywidualnych potrzeb. Korzystając z naszych usług zgadzasz się na
+          <a href="polityka-prywatnosci.html" target="_blank" class="cookie__ctn-anchor">politykę prywatności.</a>
+        </p>
+        <button class="cookie__ctn-btn">Zgadzam się</button>
+      </div>
+    </div>
+  <!-- end of cookie -->
+  </section>
+<!-- end of wrapper -->
+
+<!-- JS Scripts -->
+<script src="js/app.js"></script>
+<script src="js/hero.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/main--before-after__slider.js"></script>
+
+<script>
+  new BeforeAfter({
+    id: '#one'
+  });
+  new BeforeAfter({
+    id: '#two'
+  });
+  new BeforeAfter({
+    id: '#three'
+  });
+  new BeforeAfter({
+    id: '#four'
+  });
+</script>
+
+
+<!-- Google reCAPTCHA v3 -->
+<script src="https://www.google.com/recaptcha/api.js?render=6Ldzev8UAAAAAAdD0sz6NHLXbaSZXzQZTezniI2I"></script>
+<script src="js/modal.js"></script>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPSWZPV"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</body>
+
+</html>

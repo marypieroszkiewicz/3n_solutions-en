@@ -1,0 +1,736 @@
+//  services cleaning electrical page style
+
+.electrical {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__heading {
+    width: 100%;
+
+    &::before {
+      content: url("../images/shape03.svg");
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+
+    &-img {
+      @media #{$HD__screens__1920} {
+        //width: inherit;
+        max-width: none;
+        width: 100%;
+      }
+    }
+  }
+
+  // WIERSZE
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$tablet_land__1024} {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &--1 {
+      flex-direction: column-reverse;
+      margin-bottom: rem(100px);
+      // margin-top: -72px;
+      // margin-top: -22.5%;
+      margin-top: -22.500vw;
+      padding: rem(0 20px);
+
+      @media #{$mobile_land__640} {
+        // margin-top: -146px;
+        // margin-top: -22.8125%;
+        margin-top: -22.813vw;
+        padding: rem(0 40px);
+      }
+
+      @media #{$tablet__768} {
+        // margin-top: -146px;
+        // margin-top: -23.046875%;
+        margin-top: -23.047vw;
+        padding: rem(0 60px);
+      }
+
+      @media #{$tablet_land__1024} {
+        // margin-top: -150px;
+        // margin-top: -14.6484375%;
+        margin-top: -14.648vw;
+        flex-direction: row;
+        margin-bottom: rem(80px);
+        align-items: center;
+      }
+
+      @media #{$desktop__1280} {
+        // margin-top: -216px;
+        // margin-top: -16.875%;
+        margin-top: -16.875vw;
+        padding: rem(0 80px);
+      }
+
+      @media #{$large__screens__1440} {
+        // margin-top: -222px;
+        // margin-top: -15.416666666666667%;
+        margin-top: -15.417vw;
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        // margin-top: -226px;
+        // margin-top: -14.125%;
+        margin-top: -14.125vw;
+        padding: rem(0 120px);
+      }
+
+      @media #{$HD__screens__1920} {
+        flex-direction: row;
+        margin-bottom: rem(110px);
+        // margin-top: -270px;
+        // margin-top: -14.0625%;
+        margin-top: -14.063vw;
+        padding: rem(0 278px 0 140px);
+      }
+
+      @media (min-width: 1921px) and (max-width: 2560px) {
+        // margin-top: -347px;
+        // margin-top: -13.5546875%;
+        margin-top: -13.555vw;
+      }
+    }
+
+    &--2, &--3 {
+
+      @media #{$tablet_land__1024} {
+        padding-top: rem(80px);
+        margin-bottom: rem(80px);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-top: rem(124px);
+        align-items: flex-start;
+        margin-bottom: rem(230px);
+      }
+    }
+
+    &--3 {
+      flex-direction: column-reverse;
+
+      @media #{$tablet_land__1024} {
+        flex-direction: row;
+      }
+    }
+
+    &--4 {
+      padding-bottom: 0;
+
+      @media #{$tablet_land__1024} {
+        padding-top: rem(80px);
+        margin-bottom: rem(80px);
+      }
+
+      @media #{$HD__screens__1920} {
+        align-items: flex-start;
+        padding-bottom: rem(240px);
+      }
+    }
+
+    &--5 {
+      flex-direction: column;
+      background-color: $catskill-white;
+      position: relative;
+
+      &::before {
+       content: "";
+       display: block;
+       width: 100%;
+       height: 100px;
+       background: rgb(236,243,247);
+       background: linear-gradient(8deg, rgba(236,243,247,1) 0%, rgba(236,243,247,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+
+      @media #{$tablet__768} {
+        height: 200px;
+      }
+
+       @media #{$large__screens__1440} {
+         height: 250px;
+       }
+
+       @media #{$full__screens__1600} {
+        height: 300px;
+      }
+
+       @media #{$HD__screens__1920} {
+         height: 400px;
+       }
+      }
+    }
+  }
+
+  &__sub-row {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$tablet__768} {
+      padding-bottom: 100px;
+    }
+
+    @media #{$tablet_land__1024} {
+      flex-direction: row;
+      // margin-top: -36px;
+      margin-top: -3.515625%;
+      // margin-top: -3.516vw;
+    }
+
+    @media #{$desktop__1280} {
+      // margin-top: -21px;
+      margin-top: -1.640625%;
+      // margin-top: -1.641vw;
+    }
+
+    @media #{$large__screens__1440} {
+      // margin-top: -36px;
+      margin-top: -2.5%;
+      // margin-top: -2.500vw;
+    }
+
+    @media #{$full__screens__1600} {
+      // margin-top: -53px;
+      margin-top: -3.3125%;
+      // margin-top: -3.313vw;
+    }
+
+    @media #{$HD__screens__1920} {
+      padding-bottom: 130px;
+      // margin-top: -81px;
+      margin-top: -4.21875%;
+      // margin-top: -4.219vw;
+    }
+  }
+
+
+  // KOLUMNY
+
+  &__col {
+    width: 100%;
+
+    @media #{$tablet_land__1024} {
+      width: calc(100% / 2);
+    }
+
+    @media #{$desktop__1280} {
+      width: calc(100% / 2);
+    }
+
+    &--1{
+
+      @media #{$tablet_land__1024} {
+        width: 60%;
+        padding-right: rem(60px);
+      }
+
+      @media #{$desktop__1280} {
+        width: calc(100% / 2);
+      }
+    }
+
+    &--2 {
+
+      @media #{$tablet_land__1024} {
+        width: 40%;
+      }
+
+      @media #{$desktop__1280} {
+        width: calc(100% / 2);
+      }
+    }
+
+    &--2, &--3 {
+      padding: 0;
+    }
+
+    &--3, &--6, &--7 {
+
+      @media #{$HD__screens__1920} {
+        width: calc(100% / 2);
+      }
+    }
+
+    &--3, &--7 {
+      padding: 0;
+      position: relative;
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 292px 0 278px);
+      }
+
+      &::before {
+        content: url("../images/bg__3.svg");
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        left: -34%;
+        top: -50px;
+
+        @media #{$tablet_land__1024} {
+          left: 0;
+          top: -80px;
+        }
+
+        @media #{$HD__screens__1920} {
+          top: -124px;
+        }
+      }
+
+    }
+
+    &--4, &--5, &--8 {
+      //padding: 0 20px 0 60px;
+      padding: rem(0 20px);
+      margin-bottom: rem(100px);
+
+      @media #{$mobile_land__640} {
+        padding: rem(60px 40px 0);
+      }
+
+      @media #{$tablet__768} {
+        padding: rem(60px 60px 0);
+      }
+
+      @media #{$tablet_land__1024} {
+        padding: rem(0 40px 0 10px);
+        margin-bottom: 0;
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 40px 0 10px);
+      }
+    }
+
+    &--4, &--8 {
+
+      @media #{$tablet_land__1024} {
+        padding: rem(0 60px 0 10px);
+        margin-bottom: 0;
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px 0 0);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 100px 0 0);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px 0 0);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 278px 0 60px);
+      }
+    }
+
+    &--5 {
+      margin-bottom: rem(100px);
+
+      @media #{$tablet_land__1024} {
+        padding: rem(0 10px 0 60px);
+        margin-bottom: 0;
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 0 0 80px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 0 0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 0 0 120px);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 16px 0 140px);
+      }
+    }
+
+    &--6 {
+      position: relative;
+      padding: 0;
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 278px 0 292px);
+      }
+
+      &::before {
+        content: url("../images/bg__4.svg");
+        display: block;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+        right: -34%;
+        top: -58px;
+
+        @media #{$tablet_land__1024} {
+          right: 0;
+          top: -80px;
+        }
+
+        @media #{$HD__screens__1920} {
+          top: -124px;
+        }
+      }
+    }
+
+    &--9 {
+      padding: rem(0 20px 40px);
+
+      @media #{$mobile_land__640} {
+        padding: rem(0 40px);
+      }
+
+      @media #{$tablet__768} {
+        padding: rem(0 60px);
+      }
+
+      @media #{$tablet_land__1024} {
+        width: 60%;
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 100px);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 0 0 140px);
+      }
+    }
+
+    &--10 {
+
+      @media #{$tablet_land__1024} {
+        width: 40%;
+        // margin-top: -100px;
+        margin-top: -9.765625%;
+        // margin-top: -9.766vw;
+        padding-right: rem(60px);
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(0 80px 0 0);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(0 100px 0 0);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(0 120px 0 0);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-right: rem(278px);
+        // margin-top: -177px;
+        margin-top: -9.21875%;
+        // margin-top: -9.219vw;
+      }
+    }
+
+
+    &-title {
+      font-family: $font-title;
+      font-size: rem(30px);
+      text-align: center;
+      padding: rem(34px 0);
+
+      @media #{$mobile_land__640} {
+        font-size: rem(40px);
+        padding: rem(0 0 34px);
+      }
+
+      @media #{$tablet_land__1024} {
+        text-align: left;
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(71px);
+      }
+
+      &--2, &--3, &--4, &--5 {
+        font-size: rem(30px);
+        font-family: $font-title--bold;
+
+        @media #{$mobile_land__640} {
+          font-size: rem(40px);
+        }
+      }
+    }
+
+    &-text {
+      font-family: $font-text;
+      font-size: rem(16px);
+      padding-bottom: rem(16px);
+
+      @media #{$mobile_land__640} {
+        font-size: rem(18px);
+        padding-bottom: rem(18px);
+      }
+
+      @media #{$tablet__768} {
+        font-size: rem(20px);
+      }
+
+      @media #{$tablet_land__1024} {
+        font-size: rem(25px);
+      }
+
+      @media #{$desktop__1280} {
+        font-size: rem(30px);
+      }
+    }
+
+    &-graphics {
+      background-color: $white;
+      padding: rem(61.5px 0);
+      box-shadow: -15px 15px 30px 0px rgba(25,96,170,0.2);
+      width: calc(100% / 2 + 40px);
+      margin: 0 auto;
+
+      @media #{$mobile_land__640} {
+        width: calc(100% / 3 - 13px);
+      }
+
+      @media #{$tablet__768} {
+        width: calc(100% / 3 - 26px);
+      }
+
+      @media #{$tablet_land__1024} {
+        padding: rem(74.5px 0);
+        width: inherit;
+      }
+
+      @media #{$desktop__1280} {
+        padding: rem(106.5px 0);
+      }
+
+      @media #{$large__screens__1440} {
+        padding: rem(118.5px 0);
+      }
+
+      @media #{$full__screens__1600} {
+        padding: rem(135px 0);
+      }
+
+      @media #{$HD__screens__1920} {
+        width: initial;
+        padding: rem(124px 0);
+        margin: 0;
+      }
+
+      &--2, &--3 {
+        padding: rem(55.5px 0);
+
+        @media #{$mobile_land__640} {
+          padding: rem(49px 0);
+        }
+
+        @media #{$tablet__768} {
+          padding: rem(57px 0);
+        }
+
+        @media #{$tablet_land__1024} {
+          padding: rem(70.5px 0);
+        }
+
+        @media #{$desktop__1280} {
+          padding: rem(102.5px 0);
+        }
+
+        @media #{$large__screens__1440} {
+          padding: rem(113px 0);
+        }
+
+        @media #{$full__screens__1600} {
+          padding: rem(132.5px 0);
+        }
+
+        @media #{$HD__screens__1920} {
+          padding: rem(124.5px 0);
+          margin: 0;
+        }
+      }
+    }
+
+    &-list {
+      padding-left: rem(40px);
+
+      @media #{$HD__screens__1920} {
+        padding-left: rem(60px);
+      }
+    }
+
+    &-item {
+      font-size: rem(16px);
+      font-family: $font-text;
+      list-style: initial;
+      list-style: inside;
+      padding-bottom: rem(10px);
+
+      @media #{$mobile_land__640} {
+        font-size: rem(18px);
+      }
+
+      @media #{$tablet_land__1024} {
+        font-size: rem(25px);
+      }
+
+      @media #{$desktop__1280} {
+        font-size: rem(30px);
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(30px);
+        padding-bottom: 0;
+      }
+
+      &--bullet {
+        list-style: none;
+        position: relative;
+
+        &::before {
+          content: url("../images/check-square_blue.svg");
+          display: inline-block;
+          position: absolute;
+          width: 20px;
+          left: -40px;
+
+          @media #{$HD__screens__1920} {
+            width: 30px;
+            left: -60px;
+          }
+        }
+      }
+    }
+  }
+
+  &__picture {
+    width: 50%;
+    margin: rem(0 auto 30px);
+    position: relative;
+
+    @media #{$tablet_land__1024} {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  &__shadow {
+
+    &--1 {
+      filter: drop-shadow(-50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+
+    &--2 {
+      filter: drop-shadow(50px 50px 70px rgba(25, 95, 169, 0.2));
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+
+    &--1, &--5 {
+      filter: drop-shadow(1px 1px 0 $white)
+      drop-shadow(-1px 1px 0 $white)
+      drop-shadow(1px -1px 0 $white)
+      drop-shadow(-1px -1px 0 $white);
+    }
+
+    &--1 {
+      @media #{$desktop__1280} {
+        margin: 0 0 0 auto;
+      }
+    }
+
+    &--2 {
+      width: 100px;
+
+      @media #{$mobile_land__640} {
+        width: 125px;
+      }
+
+      @media #{$tablet__768} {
+        width: 140px;
+      }
+
+      @media #{$large__screens__1440} {
+        width: 150px;
+      }
+
+      @media #{$large__screens__1440} {
+        width: 160px;
+      }
+
+      @media #{$full__screens__1600} {
+        width: 170px;
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 185px;
+      }
+    }
+
+    &--3, &--4 {
+      width: 70px;
+
+      @media #{$mobile_land__640} {
+        width: 80px;
+      }
+
+      @media #{$tablet__768} {
+        width: 90px;
+      }
+
+      @media #{$large__screens__1440} {
+        width: 105px;
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 110px;
+      }
+    }
+  }
+}
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

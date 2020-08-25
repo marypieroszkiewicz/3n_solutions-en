@@ -1,0 +1,350 @@
+.modal {
+  position: relative;
+
+  &__container {
+    position: fixed;
+    //top: 40px;
+    //top: 12.500vw;
+    right: 0;
+    z-index: 99999;
+    //transform: translateY(-100vw);
+    //transition: 2s transform ease-out;
+    display: none;
+    //top: 25px;
+    top: 7.813vw;
+
+    @media #{$mobile_land__640} {
+      top: 6.250vw;
+    }
+
+    @media #{$tablet__768} {
+      top: auto;
+      bottom: 0.651vw;
+      right: 0.684vw;
+    }
+
+    @media #{$HD__screens__1920} {
+      right: 3%;
+    }
+
+    &.is-open {
+      display: block;
+      //transform: translateY(0);
+    }
+  }
+
+  &__wrapper {
+    width: calc(100% - 40px);
+    max-width: 400px;
+    position: relative;
+    margin: 10% auto 0;
+    padding: rem(0 20px 20px);
+    border-radius: 10px;
+    background: #fff;
+    border: 3px solid $fun-blue;
+
+    @media #{$HD__screens__1920} {
+      margin: 10% auto;
+    }
+  }
+
+  &__content {
+    overflow-y: scroll;
+    max-height: 80vh;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-visibility: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    @media #{$HD__screens__1920} {
+      overflow-y: auto;
+      max-height: initial;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0px;
+      background: transparent;
+    }
+  }
+
+  &__close {
+    cursor: pointer;
+
+    &::after {
+      content: url("../images/criss-cross.svg");
+      display: block;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      width: 30px;
+      z-index: 2;
+    }
+
+    &:hover {
+      background: $cornflower-blue;
+    }
+  }
+
+  &__title {
+    font-size: rem(20px);
+    color: $red-orange;
+    padding-bottom: rem(16px);
+    white-space: normal;
+
+    @media #{$mobile_land__640} {
+      padding-bottom: rem(20px);
+    }
+
+    @media #{$tablet__768} {
+      font-size: rem(22px);
+    }
+
+    @media #{$tablet_land__1024} {
+      font-size: rem(24px);
+    }
+
+    @media #{$desktop__1280} {
+      font-size: rem(26px);
+    }
+
+    @media #{$large__screens__1440} {
+      font-size: rem(28px);
+    }
+
+    @media #{$HD__screens__1920} {
+      font-size: 30px;
+      white-space: pre-line;
+    }
+  }
+
+  &__text {
+    padding-bottom: rem(10px);
+    font-size: rem(18px);
+
+    @media #{$mobile_land__640} {
+      padding-bottom: rem(20px);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &-row {
+      width: 100%;
+      padding-bottom: rem(10px);
+    }
+
+    &-input {
+      width: 100%;
+      padding: rem(5px);
+      font-size: rem(16px);
+      border: 1px solid $bombay;
+
+      @media #{$HD__screens__1920} {
+        padding: rem(10px);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+
+    &-more {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.5s max-height;
+
+      &--open {
+        max-height: 300px;
+        overflow-y: auto;
+      }
+    }
+
+    &-textarea {
+      width: 100%;
+      resize: none;
+      padding: rem(5px);
+      border: 1px solid $bombay;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-checkbox {
+
+      &__text {
+        padding: rem(1px 0 0 15px);
+
+        &--bold {
+          text-decoration: underline;
+          color: $fun-blue;
+        }
+      }
+    }
+
+    &-btn {
+      background-color: #ff2d30;
+      color: #fff;
+      padding: rem(13px 40px);
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
+  &__btn {
+    background: $fun-blue;
+    color: #fff;
+    padding: rem(13px 40px);
+    outline: none;
+    border: none;
+    position: fixed;
+    z-index: 2;
+    bottom: 6.250vw;
+    right: 7%;
+    cursor: pointer;
+
+    @media #{$tablet__768} {
+      right: 3%;
+    }
+
+    &-more {
+      background-color: $fun-blue;
+      padding: rem(5px 15px);
+      align-self: flex-start;
+      margin-bottom: 10px;
+      color: $white;
+
+      &:after {
+        content: '';
+        border-style: solid;
+        border-color: $white;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        transform: rotate(135deg);
+        border-width: 2px 2px 0 0;
+        width: 8px;
+        height: 8px;
+        top: 3px;
+        left: 10px;
+        transition: all .2s ease;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+/* ---------------------------------------------------- */
+/* walidacja formularza JS */
+/* ---------------------------------------------------- */
+
+.modal__form .field-error {
+  border: 1px solid $red-ribbon;
+  outline: none;
+}
+
+.modal__form .form-error-text {
+  color: $red-ribbon;
+  font-size: 0.8rem;
+}
+
+.modal__form .form-error-inline .form-error-text {
+  display: none;
+}
+
+.modal__form .send-error {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  color: red;
+}
+
+@media screen and (max-width :500px) {
+  .modal__form .send-error {
+    text-align: center;
+    display: block;
+  }
+}
+
+
+/* ---------------------------------------------------- */
+/* loading */
+/* ---------------------------------------------------- */
+
+.elem-is-busy {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.elem-is-busy::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0,0,0,0.7);
+  transform: translate(-50%, -50%) rotate(0deg);
+  content:"";
+  animation: rotateSingleLoading 0.3s infinite linear;
+  z-index: 10;
+}
+
+@keyframes rotateSingleLoading {
+
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.modal__form-send-success {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  border: 1px solid #eee;
+  color: #333;
+  padding: 22px 0;
+  margin: 40px auto;
+  max-width: 40rem;
+}
+
+.modal__form-send-success strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.modal__form-send-success span {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+  display: block;
+}
+
+.honey-row {
+  display: none;
+}
+
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

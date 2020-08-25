@@ -1,0 +1,240 @@
+.contact {
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$tablet_land__1024} {
+      margin: rem(0 40px);
+    }
+
+    @media #{$HD__screens__1920} {
+      margin: 0;
+    }
+
+    &-title {
+      font-family: $font-title--bold;
+      font-size: rem(40px);
+      padding-bottom: rem(38px);
+
+    }
+
+    &-title {
+      font-family: $font-title;
+      font-size: rem(30px);
+      padding-bottom: rem(34px);
+      text-align: center;
+
+      @media #{$mobile_land__640} {
+        font-size: rem(40px);
+      }
+    }
+
+    &-row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-bottom: rem(22px);
+
+      @media #{$mobile_land__640} {
+        flex-direction: row;
+      }
+
+      &--3 {
+        flex-direction: column;
+      }
+
+      &__lab {
+        color: $oslo-gray;
+        font-family: $font-text;
+        font-size: rem(15px);
+        margin-bottom: rem(10px);
+
+        &-text {
+          width: 100%;
+          padding-left: rem(21px);
+        }
+      }
+
+      &__link {
+        color: $fun-blue;
+        text-decoration: underline;
+      }
+
+      &__btn {
+        color: $white;
+        font-size: rem(20px);
+        font-family: $font-title--bold;
+        background-color: $fun-blue;
+        -webkit-box-shadow: -30px 30px 40px 0px rgba(25,96,170,0.21);
+        box-shadow: -30px 30px 40px 0px rgba(25,96,170,0.21);
+        padding: rem(12px 54px);
+        cursor: pointer;
+      }
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: rem(15px);
+
+      @media #{$mobile_land__640} {
+        width: calc(100% / 2 - 16px);
+      }
+
+      &__lab {
+        color: $oslo-gray;
+        font-family: $font-text;
+        font-size: rem(15px);
+        margin-bottom: rem(10px);
+      }
+
+      &__inp {
+        border: 0;
+        outline: 0;
+        border-bottom: 1px solid $catskill-white;
+
+        &:focus {
+          border-bottom: 1px solid $catskill-white;
+        }
+
+      }
+
+      &__area {
+        border: 1px solid $catskill-white;
+        resize: none;
+        padding: rem(16px);
+
+        &:focus {
+          border: 1px solid $catskill-white;
+        }
+      }
+    }
+
+    &-required {
+      &::after {
+        content: ' *';
+        color: $red-ribbon;
+      }
+    }
+  }
+}
+
+
+/* ---------------------------------------------------- */
+/* walidacja formularza JS */
+/* ---------------------------------------------------- */
+
+.contact__form .field-error,
+.contact__form .field-error {
+  border-bottom: 1px solid $red-ribbon;
+  outline: none;
+}
+
+.form-error-text {
+  color: $red-ribbon;
+  font-size: 0.8rem;
+}
+
+.contact__form-col__area.field-error {
+  border: 1px solid $red-ribbon;
+}
+
+.form-error-inline .form-error-text {
+  display: none;
+}
+
+.contact__form .send-error {
+  display:inline-block;
+  font-family: sans-serif;
+  padding:1rem 2rem;
+  color:red;
+}
+
+@media screen and (max-width: 500px) {
+  .contact__form .send-error {
+    text-align: center;
+    display: block;
+  }
+}
+
+
+/* ---------------------------------------------------- */
+/* loading */
+/* ---------------------------------------------------- */
+
+.elem-is-busy {
+  position: relative;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.elem-is-busy::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-right-color: rgba(0,0,0,0.7);
+  transform: translate(-50%, -50%) rotate(0deg);
+  content:"";
+  animation: rotateSingleLoading 0.3s infinite linear;
+  z-index: 10;
+}
+
+@keyframes rotateSingleLoading {
+
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.form-send-success {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid #eee;
+  color: #333;
+  padding: 10rem 0;
+  margin: 3rem auto;
+  max-width: 40rem;
+}
+
+.form-send-success strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-send-success span {
+  font-size: 1rem;
+  color: #888;
+  font-weight: normal;
+  display: block;
+}
+
+.honey-row {
+  display: none;
+}
+
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

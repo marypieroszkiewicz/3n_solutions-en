@@ -1,0 +1,443 @@
+.contact {
+  width: 100%;
+
+  &__row {
+    display: flex;
+    flex-direction: column;
+    padding: rem(40px 20px 0);
+    position: relative;
+
+    @media #{$mobile_land__640} {
+      padding: rem(60px 40px 0);
+    }
+
+    @media #{$tablet__768} {
+      padding: rem(60px 60px 0);
+    }
+
+    @media #{$tablet_land__1024} {
+      flex-direction: row;
+      padding: rem(80px 0 0);
+    }
+
+    @media #{$HD__screens__1920} {
+      flex-direction: row;
+      padding: rem(161px 0 0);
+    }
+  }
+
+  &__col {
+   width: 100%;
+
+    @media #{$tablet_land__1024} {
+      width: calc(100% / 2);
+    }
+
+    &--1 {
+      position: relative;
+      width: 100%;
+
+      &::before {
+        content: url("../images/bg__6.svg");
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: -40px;
+        left: -6.25%;
+        z-index: -1;
+      }
+
+      @media #{$mobile_land__640} {
+        width: 100%;
+
+        &::before {
+          top: -9.375vw;
+          left: -9.375vw;
+        }
+      }
+
+      @media #{$tablet_land__1024} {
+        width: 50%;
+        margin: rem(0 0 0 60px);
+
+        &::before {
+          top: -7.813vw;
+          left: -5.859vw;
+        }
+      }
+
+      @media #{$desktop__1280} {
+        margin: rem(0 0 0 80px);
+
+        &::before {
+          left: -6.250vw;
+        }
+      }
+
+      @media #{$large__screens__1440} {
+        margin: rem(0 0 0 100px);
+
+        &::before {
+          left: -6.944vw;
+        }
+      }
+
+      @media #{$full__screens__1600} {
+        margin: rem(0 0 0 120px);
+
+        &::before {
+          left: -7.500vw;
+        }
+      }
+
+      @media #{$HD__screens__1920} {
+        padding-left: rem(140px);
+        margin: 0 auto;
+
+        &::before {
+          top: -8.385vw;
+          left: 0;
+        }
+      }
+
+      @media (min-width: 1921px) {
+        &::before {
+          width: 120%;
+          left: -12.500vw;
+        }
+      }
+    }
+
+    &--2 {
+      display: flex;
+      flex-direction: column;
+
+      @media #{$HD__screens__1920} {
+        padding: rem(35px 278px 0 154px);
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    padding: rem(30px 0);
+
+    @media #{$mobile_land__640} {
+      padding: rem(30px 0 50px);
+    }
+
+    @media #{$tablet__768} {
+      flex-direction: row;
+    }
+
+    @media #{$tablet_land__1024} {
+      flex-wrap: wrap;
+      margin-left: rem(40px);
+    }
+
+    @media #{$HD__screens__1920} {
+      margin-left: 0;
+      padding: rem(0 0 62px);
+    }
+
+    &-wrap {
+      display: flex;
+      flex-direction: column;
+      font-size: rem(20px);
+
+      @media #{$mobile_land__640} {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      @media #{$HD__screens__1920} {
+        font-size: rem(30px);
+      }
+
+      &--1 {
+        padding: rem(20px 0);
+
+        @media #{$mobile_land__640} {
+          padding: rem(40px 0);
+          width: 100%;
+          flex-wrap: wrap;
+        }
+
+        @media #{$tablet__768} {
+          flex-direction: column;
+          width: 30%;
+          padding: 0;
+        }
+
+        @media #{$tablet_land__1024} {
+          padding: rem(0 0 48px);
+          width: 100%;
+          flex-direction: row;
+        }
+
+        @media #{$HD__screens__1920} {
+          padding: rem(0 0 48px);
+        }
+
+        &::before {
+          content: "Kontakt";
+          color: $fun-blue;
+          font-weight: bold;
+          display: inline-flex;
+          font-size: rem(22px);
+          padding-bottom: rem(16px);
+          width: 100%;
+
+          @media #{$tablet__768} {
+            display: inline-flex;
+          }
+        }
+      }
+
+      &--2 {
+        @media #{$tablet__768} {
+          width: 70%;
+          justify-content: space-around;
+        }
+
+        @media #{$tablet_land__1024} {
+          width: 100%;
+        }
+      }
+    }
+
+    &-email, &-phone {
+      align-self: flex-start;
+
+      @media #{$mobile_land__640} {
+        align-self: center;
+        width: 50%;
+      }
+
+      @media #{$tablet__768} {
+        width: auto;
+        align-self: flex-start;
+      }
+    }
+
+    &-email, &-phone, &-address {
+
+      @media #{$mobile_land__640} {
+        align-self: center;
+      }
+
+      @media #{$tablet__768} {
+        align-self: flex-start;
+      }
+
+      @media #{$tablet_land__1024} {
+        text-align: left;
+        width: 50%;
+      }
+
+    }
+
+    &-email {
+      padding-bottom: rem(10px);
+
+      @media #{$mobile_land__640} {
+        padding-bottom: 0;
+      }
+
+      @media #{$tablet__768} {
+        padding-bottom: rem(5px);
+      }
+
+      @media #{$tablet_land__1024} {
+        padding-bottom: 0;
+      }
+
+      &__anchor {
+        display: inline-block;
+        width: 27px;
+        margin-right: rem(8px);
+        vertical-align: middle;
+      }
+
+      &__text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    &-phone {
+
+      &__anchor {
+        display: inline-block;
+        width: 18px;
+        margin-left: rem(2px);
+        margin-right: rem(11px);
+        vertical-align: middle;
+
+        @media #{$HD__screens__1920} {
+          //width: 14px;
+          vertical-align: top;
+        }
+      }
+
+      &__text {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    &-address {
+
+      align-self: flex-start;
+      width: 100%;
+
+      @media #{$tablet__768} {
+        width: auto;
+      }
+
+      @media #{$tablet_land__1024} {
+        width: 50%;
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 50%;
+      }
+
+      &__title {
+        color: $fun-blue;
+        font-size: rem(22px);
+        padding-bottom: rem(16px);
+
+        @media #{$HD__screens__1920} {
+          text-align: left;
+        }
+      }
+
+      &__content {
+        display: inline-flex;
+
+        &-anchor {
+          width: 29px;
+          margin-right: rem(8px);
+        }
+
+        &-text {
+          white-space: pre-line;
+        }
+      }
+
+      &__text {
+        display: inline-flex;
+        white-space: pre-line;
+
+        &::before {
+          content: url("../images/map.svg");
+          display: inline-block;
+          width: 29px;
+          margin-right: rem(8px);
+
+          @media #{$HD__screens__1920} {
+            width: 27px;
+          }
+        }
+      }
+
+      &--1 {
+        padding-bottom: rem(20px);
+
+        @media #{$mobile_land__640} {
+          padding-bottom: 0;
+        }
+      }
+
+      &--2 {
+
+        @media #{$HD__screens__1920} {
+          margin-left: rem(16px);
+        }
+      }
+    }
+  }
+
+  &__shape {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    &-img {
+      //width: 100px;
+      width: 31.250vw;
+
+      @media #{$tablet_land__1024} {
+        //width: 200px;
+        width: 19.531vw;
+      }
+
+      @media #{$desktop__1280} {
+        //width: 230px;
+        width: 17.969vw;
+      }
+
+      @media #{$large__screens__1440} {
+        //width: 250px;
+        width: 17.361vw;
+      }
+
+      @media #{$full__screens__1600} {
+        //width: 280px;
+        width: 17.500vw;
+      }
+
+      @media #{$HD__screens__1920} {
+        //width: 318px;
+        width: 16.563vw;
+      }
+    }
+  }
+}
+
+.mapouter {
+  width: 100%;
+  height: 100%;
+}
+
+.google-map {
+  width: 100%;
+  height: 88vw;
+
+  @media #{$desktop__1280} {
+    height: 73vw;
+  }
+
+  @media #{$large__screens__1440} {
+    height: 64vw;
+  }
+
+  @media #{$full__screens__1600} {
+    height: 57vw;
+  }
+
+  @media #{$HD__screens__1920} {
+    height: 52vw;
+  }
+
+  @media (min-width: 1921px) and (max-width: 2560px) {
+      height: 37vw;
+  }
+}
+
+@media #{$mobile_land__640} {
+}
+@media #{$tablet__768} {
+}
+@media #{$tablet_land__1024} {
+}
+@media #{$desktop__1280} {
+}
+@media #{$large__screens__1440} {
+}
+@media #{$full__screens__1600} {
+}
+@media #{$HD__screens__1920} {
+}

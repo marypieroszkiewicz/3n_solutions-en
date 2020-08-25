@@ -1,0 +1,133 @@
+/* ---------------------------------------------------- */
+/* ----- GLOBAL STYLES ----- */
+/* ---------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  // --scroll-behavior: smooth;
+  // scroll-behavior: smooth;
+  // font-family: "scroll-behavior: smooth";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  //overflow-x: hidden;
+
+
+  //@media #{$HD__screens__1920} {
+  //  overflow-x: visible;
+  //}
+  //overflow-y: scroll;
+  //height: 100vh;
+
+  // @media #{$desktop__1200} {
+  //   scroll-padding-top: 80px;
+  // }
+}
+
+body {
+  // scroll-behavior: smooth;
+  font-family: $font-base;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  //width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  color: black;
+  display: inline-flex;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  box-shadow: 0 0 0 4px $white, 0 0 0 6px $bombay;
+  border-radius: 2px;
+  background: $white;
+  transform: scale(0.8);
+  margin: 3px 0 0 4px
+}
+
+input[type="checkbox"]:checked + label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: $red-orange;
+  box-shadow: 0 0 0 4px $white, 0 0 0 6px $bombay;
+  transform: scale(0.8);
+  margin-top: 3px;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+/* --- CLEARFIX --- */
+.clearfix {
+  @include clearfix;
+}
+
+/* --- WEBPAGE CONTAINER --- */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+}
+
+/* ----- END OF GLOBAL STYLES ----- */

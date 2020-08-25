@@ -1,0 +1,38 @@
+// ----- Modules -----
+@import "modules/variables";
+@import "modules/mixins";
+@import "modules/placeholders";
+@import "modules/functions";
+
+// ----- Plugins -----
+@import "plugins/rem";
+
+// ----- Base -----
+@import "base/fonts";
+@import "base/global";
+
+// ----- Partials -----
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+// ----- Components -----
+@import "components/modal";
+@import "components/hero";
+@import "components/form";
+@import "components/cookie";
+
+// ----- Pages -----
+@import "pages/services";
+@import "pages/services-maintenance";
+@import "pages/services-electrical";
+@import "pages/services-fire";
+@import "pages/services-hydrodynamic--cleaning";
+@import "pages/services-measurements";
+@import "pages/about-us";
+@import "pages/realizations";
+@import "pages/technologies-gas--mixture";
+@import "pages/technologies-ozonation";
+@import "pages/contact";
+@import "pages/tenders";
+@import "pages/privacy-policy";
