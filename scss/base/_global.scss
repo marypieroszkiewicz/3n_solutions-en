@@ -13,32 +13,14 @@
   box-sizing: border-box;
 }
 
-html {
-  // --scroll-behavior: smooth;
-  // scroll-behavior: smooth;
-  // font-family: "scroll-behavior: smooth";
-}
 
 html,
 body {
   width: 100%;
   height: 100%;
-  //overflow-x: hidden;
-
-
-  //@media #{$HD__screens__1920} {
-  //  overflow-x: visible;
-  //}
-  //overflow-y: scroll;
-  //height: 100vh;
-
-  // @media #{$desktop__1200} {
-  //   scroll-padding-top: 80px;
-  // }
 }
 
 body {
-  // scroll-behavior: smooth;
   font-family: $font-base;
   height: 100%;
 }
@@ -52,7 +34,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  //width: 100%;
 }
 
 figure {
