@@ -1,0 +1,11 @@
+.DS_Store
+.idea/*
+_assets/*
+.history/*
+node_modules/*
+.sass-cache/*
+*.css.map
+package-lock.json
+npm-debug.log
+*/.htaccess
+!www/.htaccess
