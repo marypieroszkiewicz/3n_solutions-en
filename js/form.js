@@ -82,8 +82,8 @@ form.addEventListener("submit", e => {
                 div.innerText = "Wysłanie wiadomości się nie powiodło";
                 form.parentElement.insertBefore(div, form);
                 div.innerHTML = `
-                        <strong>Wiadomość została wysłana</strong>
-                        <span>Dziękujemy za kontakt. Postaramy się odpowiedzieć jak najszybciej</span>
+                        <strong>Message was sent.</strong>
+                        <span>Thank you for contacting us. We will try to answer as soon as possible.</span>
                     `;
                 form.remove();
               } else {

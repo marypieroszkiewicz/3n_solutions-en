@@ -173,16 +173,16 @@
           </div>
   
           <form class="contact__form" id="contactForm" method="post" action="send-script.php">
-            <h2 class="contact__form-title">Wypełnij formularz kontaktowy</h2>
+            <h2 class="contact__form-title">Fill out the contact form</h2>
             <div class="contact__form-content">
   
               <div class="contact__form-row contact__form-row--1">
                 <div class="contact__form-col contact__form-col--2">
-                  <label class="contact__form-col__lab contact__form-required" for="name">Imię</label>
+                  <label class="contact__form-col__lab contact__form-required" for="name">Name</label>
                   <input class="contact__form-col__inp" type="text" name="name" required pattern=.{3,} id="name" data-error="Wypełnij to pole">
                 </div>
                 <div class="contact__form-col contact__form-col--2">
-                  <label class="contact__form-col__lab contact__form-required" for="surname">Nazwisko</label>
+                  <label class="contact__form-col__lab contact__form-required" for="surname">Surname</label>
                   <input class="contact__form-col__inp" type="text" name="surname" required pattern=.{3,} id="surname" data-error="Wypełnij to pole">
                 </div>
               </div>
@@ -192,19 +192,19 @@
                   <input class="contact__form-col__inp" type="email" name="email" id="email" required data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
                 </div>
                 <div class="contact__form-col contact__form-col--4">
-                  <label class="contact__form-col__lab" for="phone">Telefon kontaktowy</label>
+                  <label class="contact__form-col__lab" for="phone">Phone number</label>
                   <input class="contact__form-col__inp" type="number" name="phone" id="phone">
                 </div>
               </div>
               <div class="contact__form-row contact__form-row--3">
-                <label class="contact__form-col__lab" for="message">Wiadomość</label>
+                <label class="contact__form-col__lab" for="message">Message</label>
                 <textarea class="contact__form-col__area" name="message" required data-error-text="Musisz wypełnić pole" id="message" cols="30" rows="10"></textarea>
               </div>
               <div class="contact__form-row contact__form-row--4">
                 <div class="contact__form-row__gdpr-privacy">
                   <input id="terms" type="checkbox" required data-error-text="Musisz wypełnić pole" name="terms" class="contact__form-row__inp contact__form-row__inp--check">
                   <label class="contact__form-row__lab" for="terms">
-                    <span class="contact__form-row__lab-text">Oświadczam, że zapoznałem się z <a href="polityka-prywatnosci.html" target="_blank" class="contact__form-row__link">polityką prywatności</a> i informacją o <a href="polityka-prywatnosci.html#data-administrator" target="_blank" class="contact__form-row__link">Administratorze danych</a></span>
+                    <span class="contact__form-row__lab-text">I declare that I have read the data <a href="polityka-prywatnosci.html" target="_blank" class="contact__form-row__link">privacy policy</a> and information about <a href="polityka-prywatnosci.html#data-administrator" target="_blank" class="contact__form-row__link">the Administrator</a></span>
                   </label>
                 </div>
               </div>
@@ -212,7 +212,7 @@
                 <label for="honey">Jeżeli jesteś człowiekiem, nie wypełniaj tego pola</label>
                 <input type="text" id="honey" name="honey">
               </div>
-              <button type="submit" class="contact__form-row__btn submit-btn">Wyślij</button>
+              <button type="submit" class="contact__form-row__btn submit-btn">Send</button>
   
             </div>
           </form>
