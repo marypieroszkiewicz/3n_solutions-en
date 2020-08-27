@@ -2,7 +2,6 @@
 /* ----- HEADER ----- */
 /* ---------------------------------------------------- */
 
-
 .wrapper {
   width: 100%;
 
@@ -20,15 +19,15 @@
   position: relative;
 
   @media #{$desktop__1280} {
-    padding: rem(0 0 0 80px);
+    padding: rem(0 0 0 40px);
   }
 
   @media #{$large__screens__1440} {
-    padding: rem(0 0 0 100px);
+    padding: rem(0 0 0 60px);
   }
 
   @media #{$full__screens__1600} {
-    padding: rem(0 0 0 120px);
+    padding: rem(0 0 0 80px);
   }
 
   @media #{$HD__screens__1920} {
@@ -108,15 +107,65 @@
   }
 
   @media #{$desktop__1280} {
-    width: 22%;
-  }
-
-  @media #{$large__screens__1440} {
-    width: 25%;
+    width: 20%;
   }
 
   @media #{$HD__screens__1920} {
     padding: rem(54px 0);
+  }
+}
+
+.lang {
+  display: flex;
+  transform: translateX(60px);
+
+  @media #{$mobile_land__640} {
+    transform: translateX(300px);
+  }
+
+  @media #{$tablet__768} {
+    transform: translateX(350px);
+  }
+
+  @media #{$tablet_land__1024} {
+    transform: translateX(570px);
+  }
+
+  @media #{$desktop__1280} {
+    display: none;
+  }
+
+  &__link {
+
+    @media #{$desktop__1280} {
+      font-size: rem(20px);
+    }
+
+    @media #{$large__screens__1440} {
+      font-size: rem(22px);
+    }
+
+    @media #{$full__screens__1600} {
+      font-size: rem(24px);
+    }
+
+    @media #{$HD__screens__1920} {
+      font-size: rem(26px);
+    }
+
+
+    &--pl {
+
+      &::after {
+        content:'|';
+        display: inline-block;
+        padding: 0 5px;
+      }
+    }
+
+    &--en {
+      color: $fun-blue;
+    }
   }
 }
 
@@ -139,6 +188,10 @@
   }
 
   @media #{$tablet_land__1024} {
+    top: 22px;
+  }
+
+  @media #{$desktop__1280} {
     display: none;
   }
 }
@@ -217,6 +270,10 @@
   background-color: $catskill-white;
 
   @media #{$tablet_land__1024} {
+    top: 59px;
+  }
+
+  @media #{$desktop__1280} {
     overflow: visible;
     top: auto;
     position: relative;
@@ -234,6 +291,14 @@
   .menu--show & {
     max-height: 900px;
     overflow-y: auto;
+
+    @media #{$tablet_land__1024} {
+      overflow: visible;
+    }
+
+    @media #{$desktop__1280} {
+      overflow-y: auto;
+    }
   }
 }
 
@@ -263,8 +328,20 @@
       padding: rem(20px);
 
       @media #{$tablet_land__1024} {
-        //flex-direction: column;
         padding: rem(0 20px 0 0);
+      }
+
+      @media #{$HD__screens__1920} {
+        padding: rem(0 40px 0 0);
+      }
+    }
+
+    &--lang {
+      display: none;
+
+      @media #{$desktop__1280} {
+        display: block;
+        padding: rem(0 40px 0 20px);
       }
 
       @media #{$HD__screens__1920} {
@@ -276,7 +353,13 @@
   @media #{$tablet_land__1024} {
     margin-top: 0;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 55px;
+
+    @media #{$desktop__1280} {
+      margin-left: 0;
+    }
   }
 
   &-submenu {
@@ -289,16 +372,19 @@
       @media #{$tablet_land__1024} {
         background-color: $catskill-white;
         position: absolute;
-
-        left: 50%;
-        transform: translateX(-50%);
+        left: 33%;
+        transform: translateX(-33%);
         z-index: 2;
-        width: 277px;
+        width: 230px;
         margin-top: 9px;
 
         @media #{$desktop__1280} {
+          left: 50%;
+          transform: translateX(-50%);
+          width: 277px;
           margin-top: 19px;
         }
+
         @media #{$large__screens__1440} {
           margin-top: 18px;
         }
@@ -523,20 +609,21 @@
     }
 
     @media #{$desktop__1280} {
-      font-size: rem(25px);
+      font-size: rem(20px);
     }
 
     @media #{$large__screens__1440} {
       padding: rem(20px);
+      font-size: rem(22px);
     }
 
     @media #{$full__screens__1600} {
-      font-size: rem(27px);
+      font-size: rem(24px);
       padding: rem(25px);
     }
 
     @media #{$HD__screens__1920} {
-      font-size: rem(31px);
+      font-size: rem(26px);
     }
 
     &--space {
@@ -704,8 +791,8 @@
         }
 
         @media #{$desktop__1280} {
-          width: 12px;
-          height: 12px;
+          width: 10px;
+          height: 10px;
           top: 4px;
         }
 
@@ -823,9 +910,9 @@
 }
 
 @media (min-width: 1921px) {
- video {
-   width: 100vw;
- }
+  video {
+    width: 100vw;
+  }
 }
 
 /* ----- END OF HEADER ----- */
