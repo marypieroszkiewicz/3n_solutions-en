@@ -315,7 +315,7 @@
               content: url("../images/map.svg");
               display: inline-block;
               width: 22%;
-              margin-right: rem(8px);
+              margin-right: rem(6px);
 
 
               @media #{$mobile_land__640} {
@@ -481,11 +481,14 @@
         &__details {
           display: flex;
           flex-direction: column;
-          white-space: pre-line;
           padding-bottom: rem(20px);
 
           &:last-child {
             padding-bottom: 0;
+          }
+
+          @media #{$mobile_land__640} {
+            white-space: pre-line;
           }
 
           &-3ns {

@@ -27,7 +27,7 @@
   }
 
   &__col {
-   width: 100%;
+    width: 100%;
 
     @media #{$tablet_land__1024} {
       width: calc(100% / 2);
@@ -254,10 +254,13 @@
       }
 
       &__anchor {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      &__img {
         width: 27px;
         margin-right: rem(8px);
-        vertical-align: middle;
       }
 
       &__text {
@@ -269,15 +272,21 @@
     &-phone {
 
       &__anchor {
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      &__img {
         width: 18px;
         margin-left: rem(2px);
         margin-right: rem(11px);
-        vertical-align: middle;
 
-        @media #{$HD__screens__1920} {
-          //width: 14px;
-          vertical-align: top;
+        @media #{$mobile_land__640} {
+          margin-left: 0;
+        }
+
+        @media #{$tablet__768} {
+          margin-left: rem(2px);
         }
       }
 
@@ -288,7 +297,6 @@
     }
 
     &-address {
-
       align-self: flex-start;
       width: 100%;
 
@@ -318,6 +326,15 @@
         display: inline-flex;
 
         &-anchor {
+          display: inline-flex;
+          align-items: center;
+
+          @media #{$mobile_land__640} {
+            align-items: flex-start;
+          }
+        }
+
+        &-img {
           width: 29px;
           margin-right: rem(8px);
         }
@@ -423,7 +440,7 @@
   }
 
   @media (min-width: 1921px) and (max-width: 2560px) {
-      height: 37vw;
+    height: 37vw;
   }
 }
 
