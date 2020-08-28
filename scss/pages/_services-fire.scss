@@ -51,15 +51,15 @@
     }
 
     @media #{$desktop__1280} {
-      padding: rem(0 80px);
+      padding: rem(0 40px);
     }
 
     @media #{$large__screens__1440} {
-      padding: rem(0 100px);
+      padding: rem(0 60px);
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(0 120px);
+      padding: rem(0 80px);
     }
 
     @media #{$HD__screens__1920} {
@@ -158,9 +158,12 @@
         font-size: rem(40px);
       }
 
+      @media #{$tablet_land__1024} {
+        text-align: left;
+      }
+
       @media #{$HD__screens__1920} {
         font-size: rem(71px);
-        text-align: left;
       }
     }
 
@@ -204,6 +207,10 @@
     &--space1, &--space5 {
       @media #{$tablet_land__1024} {
         padding: rem(0 60px 0 0);
+
+        @media #{$HD__screens__1920} {
+          padding: 0;
+        }
       }
     }
 

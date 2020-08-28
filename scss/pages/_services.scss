@@ -3,23 +3,19 @@
   background-color: $white;
 
   @media #{$desktop__1280} {
-    padding: rem(0 80px 80px);
+    padding: rem(0 40px 80px);
   }
 
   @media #{$large__screens__1440} {
-    padding: rem(0 100px 120px);
+    padding: rem(0 60px 120px);
   }
 
   @media #{$full__screens__1600} {
-    padding: rem(0 120px 130px);
+    padding: rem(0 80px 130px);
   }
 
   @media #{$HD__screens__1920} {
     padding: rem(0 140px 145px);
-  }
-
-  @media (min-width: 1921px) and (max-width: 2560px) {
-
   }
 
   &--bg {

@@ -1,4 +1,4 @@
-.tenders {
+.tenders .tenders {
   display: flex;
   flex-direction: column;
 
@@ -18,15 +18,15 @@
     }
 
     @media #{$desktop__1280} {
-      padding: rem(80px);
+      padding: rem(40px);
     }
 
     @media #{$large__screens__1440} {
-      padding: rem(100px);
+      padding: rem(60px);
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(120px);
+      padding: rem(80px);
     }
 
     @media #{$HD__screens__1920} {
@@ -71,9 +71,9 @@
     @media #{$desktop__1280} {
       font-size: rem(30px);
 
-      &:nth-of-type(2), &:nth-of-type(4) {
-        font-size: rem(27px);
-      }
+      //&:nth-of-type(2), &:nth-of-type(4) {
+      //  font-size: rem(27px);
+      //}
     }
   }
 
@@ -264,7 +264,7 @@
       }
 
       @media #{$HD__screens__1920} {
-       justify-content: center;
+        justify-content: center;
       }
     }
 

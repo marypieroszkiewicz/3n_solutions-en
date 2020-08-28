@@ -13,7 +13,15 @@
       padding: rem(60px);
     }
 
+    @media #{$desktop__1280} {
+      padding: rem(40px);
+    }
+
     @media #{$large__screens__1440} {
+      padding: rem(60px);
+    }
+
+    @media #{$full__screens__1600} {
       padding: rem(80px);
     }
 

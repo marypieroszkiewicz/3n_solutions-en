@@ -8,6 +8,15 @@
       margin: rem(0 40px);
     }
 
+    @media #{$large__screens__1440} {
+      margin: rem(0 60px);
+    }
+
+    @media #{$full__screens__1600} {
+      margin: rem(0 80px);
+    }
+
+
     @media #{$HD__screens__1920} {
       margin: 0;
     }

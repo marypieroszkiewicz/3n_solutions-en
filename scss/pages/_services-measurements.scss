@@ -44,12 +44,16 @@
       align-items: center;
     }
 
+    @media #{$desktop__1280} {
+      padding: rem(0 40px);
+    }
+
     @media #{$large__screens__1440} {
-      padding: rem(0 100px);
+      padding: rem(0 60px);
     }
 
     @media #{$full__screens__1600} {
-      padding: rem(0 120px);
+      padding: rem(0 80px);
     }
 
     @media #{$HD__screens__1920} {
@@ -168,11 +172,11 @@
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 100px);
+        padding: rem(0 80px);
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(0 120px);
+        padding: rem(0 100px);
       }
 
       @media #{$HD__screens__1920} {

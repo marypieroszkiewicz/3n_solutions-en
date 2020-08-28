@@ -8,13 +8,13 @@
       width: 100%;
       position: relative;
 
-        &::before {
-          content: url("../images/shape02.svg");
-          width: 100%;
-          position: absolute;
-          top: 0;
-          z-index: -1;
-        }
+      &::before {
+        content: url("../images/shape02.svg");
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+      }
 
       &-img {
         @media #{$HD__screens__1920} {
@@ -45,15 +45,15 @@
       }
 
       @media #{$desktop__1280} {
-        padding: rem(0 80px);
+        padding: rem(0 40px);
       }
 
       @media #{$large__screens__1440} {
-        padding: rem(0 100px);
+        padding: rem(0 60px);
       }
 
       @media #{$full__screens__1600} {
-        padding: rem(0 120px);
+        padding: rem(0 80px);
       }
 
       @media #{$HD__screens__1920} {
@@ -596,7 +596,7 @@
       &--1 {
 
         @media #{$mobile_land__640} {
-         margin-right: rem(20px);
+          margin-right: rem(20px);
         }
 
         @media #{$tablet__768} {
