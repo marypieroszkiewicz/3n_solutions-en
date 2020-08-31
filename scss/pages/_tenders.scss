@@ -1,4 +1,4 @@
-.tenders .tenders {
+.tenders {
   display: flex;
   flex-direction: column;
 
@@ -125,34 +125,100 @@
 
   &__subpage {
 
-    &-anchor {
-      font-size: rem(18px);
-      color: $fun-blue;
-      text-decoration: underline;
-      display: block;
+    //&-anchor {
+    //  font-size: rem(18px);
+    //  color: $fun-blue;
+    //  text-decoration: underline;
+    //  display: block;
+    //
+    //  @media #{$mobile_land__640} {
+    //    font-size: rem(20px);
+    //  }
+    //
+    //  @media #{$tablet_land__1024} {
+    //    font-size: rem(25px);
+    //  }
+    //
+    //  @media #{$desktop__1280} {
+    //    font-size: rem(30px);
+    //  }
+    //
+    //  &--pl {
+    //    padding-bottom: rem(30px);
+    //  }
+    //
+    //  &--en {
+    //    @media #{$desktop__1280} {
+    //      padding-bottom: 0;
+    //    }
+    //  }
+    //
+    //}
 
-      @media #{$mobile_land__640} {
-        font-size: rem(20px);
-      }
+    &-anchor {
+      display: block;
+      font-size: 30px;
+      color: $fun-blue;
 
       @media #{$tablet_land__1024} {
-        font-size: rem(25px);
+        width: 46%;
       }
 
       @media #{$desktop__1280} {
-        font-size: rem(30px);
+        width: 35%;
       }
 
-      &--pl {
-        padding-bottom: rem(30px);
+      @media #{$large__screens__1440} {
+        width: 31%;
       }
 
-      &--en {
+      @media #{$full__screens__1600} {
+        width: 29%;
+      }
+
+      @media #{$HD__screens__1920} {
+        width: 28%;
+      }
+
+      &::before {
+        content: 'Download Leaflet';
+        font-size: rem(18px);
+        display: block;
+        padding: rem(30px 0 20px);
+        color: $fun-blue;
+        text-decoration: underline;
+
+        @media #{$mobile_land__640} {
+          font-size: rem(20px);
+        }
+
+        @media #{$tablet_land__1024} {
+          font-size: rem(25px);
+        }
+
         @media #{$desktop__1280} {
-          padding-bottom: 0;
+          font-size: rem(30px);
         }
       }
+    }
 
+    &-thumbnail {
+      width: calc(100% - 80px);
+      margin: 0 auto;
+      border: 1px solid $black;
+
+      @media #{$mobile_land__640} {
+        width: calc(100% - 160px);
+      }
+
+      @media #{$tablet__768} {
+        width: calc(100% - 180px);
+      }
+
+      @media #{$tablet_land__1024} {
+        width: 100%;
+        margin: 0;
+      }
     }
 
 
