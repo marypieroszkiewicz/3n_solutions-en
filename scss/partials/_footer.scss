@@ -232,6 +232,58 @@
             }
           }
 
+          &-anchor {
+            display: inline-flex;
+            align-items: center;
+
+            &--1 {
+              padding-bottom: 5px;
+            }
+
+            &--3 {
+              width: 100%;
+              align-items: start;
+            }
+          }
+
+          &-img {
+            &--1 {
+              width: 11%;
+              margin-right: rem(8px);
+            }
+
+            &--2 {
+              width: 8%;
+              margin-right: rem(11px);
+            }
+
+            &--3 {
+              width: 22%;
+              margin-right: rem(8px);
+
+              @media #{$mobile_land__640} {
+                width: 12%;
+                margin-right: rem(20px);
+              }
+
+              @media #{$tablet_land__1024} {
+                width: 13%;
+              }
+
+              @media #{$desktop__1280} {
+                width: 12%;
+              }
+
+              @media #{$full__screens__1600} {
+                width: 11%;
+              }
+            }
+          }
+
+          &-text {
+            display: inline-block;
+          }
+
           &-wrap {
             @media #{$mobile_land__640} {
               width: 100%;
@@ -311,20 +363,21 @@
               width: 100%;
             }
 
-            &::before {
-              content: url("../images/map.svg");
-              display: inline-block;
-              width: 22%;
-              margin-right: rem(6px);
+            &--2 {
+              &::before {
+                content: url("../images/map.svg");
+                display: inline-block;
+                width: 22%;
+                margin-right: rem(8px);
 
+                @media #{$mobile_land__640} {
+                  width: 10%;
+                  margin-right: rem(20px);
+                }
 
-              @media #{$mobile_land__640} {
-                width: 10%;
-                margin-right: rem(20px);
-              }
-
-              @media #{$desktop__1280} {
-                width: 9%;
+                @media #{$desktop__1280} {
+                  width: 9%;
+                }
               }
             }
           }
