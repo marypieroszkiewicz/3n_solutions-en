@@ -198,11 +198,12 @@
       &--2 {
         @media #{$tablet__768} {
           width: 70%;
-          justify-content: space-around;
+          //justify-content: space-around;
         }
 
         @media #{$tablet_land__1024} {
           width: 100%;
+          justify-content: start;
         }
       }
     }
